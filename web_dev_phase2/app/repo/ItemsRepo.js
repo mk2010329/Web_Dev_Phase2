@@ -10,6 +10,14 @@ class ItemRepo{
         return await fs.readJSON(this.#itemsFilePath);
     }
 
+    async getItem(name){
+        if(!name || typeof name!=='string'){
+            throw new Error("Invalid Item Name");
+        }
+        const Items = await this.getItems();
+        return Items.filter((item)=>item.name.toLowerCase().includes(name.toLowerCase()));
+    }
+
     async uploadItem(newItem){
     let items = JSON.parse(localStorage.getItem("itemList"));
     items.push(newItem);
