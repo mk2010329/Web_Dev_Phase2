@@ -1,0 +1,113 @@
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.Container {
+    background-color: #d1d1d1;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"],
+input[type="file"]{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#picture{
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1985f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px ;
+}
+
+button:hover {
+    background-color: #0056b3;
+} 
+  
+
+#Cate {
+    display: flex;
+    flex-direction: row; 
+    align-content: baseline;
+}
+
+/* #buttonUpload{
+    display: flex;
+    justify-content: center;
+} */
+  
+#Cate label {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+  
+@media (max-width: 40rem) {
+    .Container {
+        background-color: #d1d1d1;
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="text"]{
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="number"],
+    input[type="file"]{
+        width: 30%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+  
+  }
+  
+

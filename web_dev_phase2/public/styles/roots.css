@@ -1,0 +1,31 @@
+
+
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --light-color:#000000;
+        --background-color:#5d5d5d;
+        --dark-color:#f6f6f6;
+    }
+    
+  }
+   
+  /* I sitll work to find the best combantion of color */
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+        --light-color:#f6f6f6;
+        --background-color:#e7e7e7;
+        --dark-color:#3d3d3d;
+    }
+    footer .icons img{
+      filter: invert();
+      width: 40px;
+      margin-top: 20px;
+    }
+
+    .ulbar li a img {
+      filter: invert();
+    }
+  }
+
+
