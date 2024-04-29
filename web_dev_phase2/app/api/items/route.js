@@ -14,18 +14,10 @@ export async function GET(request){
     }
 }
 
-export async function PUT(request, { params }) {
-    const id = params.id;
-    const book = await request.json()
-    const updatedBook = await booksRepo.updateBook(isbn, book)
-    return Response.json(updatedBook)
+export async function PUT(request) {
+    
 }
 
 export async function POST(request) {
-
-    const book = await request.json()
-    console.log(book);
-    const newBook = await booksRepo.addBook(book)
-    return Response.json(newBook)
 
 }
