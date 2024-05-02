@@ -1,0 +1,88 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  username Int [pk]
+  password Int [not null]
+  name String [not null]
+  surname String [not null]
+  shippingAddress String [not null]
+  cartItems CartItem [not null]
+  currentlySelling CurrentlySellingItem [not null]
+  itemSaleHistoryAsSeller ItemSaleHistory [not null]
+  itemSaleHistoryAsBuyer ItemSaleHistory [not null]
+  bankAccount BankAccount
+}
+
+Table Item {
+  itemId Int [pk]
+  itemName String [not null]
+  price Int [not null]
+  quantity Int [not null]
+  selectedQuantity Int
+  pictureUrl String [not null]
+  category String [not null]
+  cartItems CartItem [not null]
+  itemSaleHistory ItemSaleHistory [not null]
+  currentlySelling CurrentlySellingItem [not null]
+}
+
+Table CartItem {
+  username Int [not null]
+  itemId Int [not null]
+  user User [not null]
+  item Item [not null]
+
+  indexes {
+    (username, itemId) [pk]
+  }
+}
+
+Table CurrentlySellingItem {
+  username Int [not null]
+  itemId Int [not null]
+  user User [not null]
+  item Item [not null]
+
+  indexes {
+    (username, itemId) [pk]
+  }
+}
+
+Table ItemSaleHistory {
+  soldByUsername Int [not null]
+  boughtByUsername Int [not null]
+  itemId Int [not null]
+  dateOfPurchase DateTime [not null]
+  sellingUser User [not null]
+  buyingUser User [not null]
+  item Item [not null]
+
+  indexes {
+    (soldByUsername, boughtByUsername, itemId) [pk]
+  }
+}
+
+Table BankAccount {
+  accountNumber Int [pk]
+  amount Int [not null]
+  user User [not null]
+  username Int [unique, not null]
+}
+
+Ref: CartItem.username > User.username
+
+Ref: CartItem.itemId > Item.itemId
+
+Ref: CurrentlySellingItem.username > User.username
+
+Ref: CurrentlySellingItem.itemId > Item.itemId
+
+Ref: ItemSaleHistory.soldByUsername > User.username
+
+Ref: ItemSaleHistory.boughtByUsername > User.username
+
+Ref: ItemSaleHistory.itemId > Item.itemId
+
+Ref: BankAccount.username - User.username

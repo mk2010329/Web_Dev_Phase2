@@ -1,0 +1,18 @@
+[
+  {
+    "username": 456,
+    "itemId": 789
+  },
+  {
+    "username": 789,
+    "itemId": 101112
+  },
+  {
+    "username": 101112,
+    "itemId": 131415
+  },
+  {
+    "username": 131415,
+    "itemId": 161718
+  }
+]

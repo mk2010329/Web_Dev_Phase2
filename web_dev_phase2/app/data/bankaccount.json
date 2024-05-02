@@ -1,0 +1,22 @@
+[
+    {
+        "accountNumber": 123456,
+        "username": 456,
+        "amount": 1000
+    },
+    {
+        "accountNumber": 789123,
+        "username": 789,
+        "amount": 1500
+    },
+    {
+        "accountNumber": 456789,
+        "username": 101112,
+        "amount": 2000
+    },
+    {
+        "accountNumber": 101112789,
+        "username": 131415,
+        "amount": 1200
+    }    
+]

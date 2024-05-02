@@ -1,0 +1,26 @@
+[
+  {
+    "soldByUsername": 456,
+    "boughtByUsername": 456,
+    "itemId": 101112,
+    "dateOfPurchase": "2024-04-29T12:00:00Z"
+  },
+  {
+    "soldByUsername": 789,
+    "boughtByUsername": 456,
+    "itemId": 131415,
+    "dateOfPurchase": "2024-04-28T12:00:00Z"
+  },
+  {
+    "soldByUsername": 101112,
+    "boughtByUsername": 456,
+    "itemId": 161718,
+    "dateOfPurchase": "2024-04-27T12:00:00Z"
+  },
+  {
+    "soldByUsername": 131415,
+    "boughtByUsername": 456,
+    "itemId": 789,
+    "dateOfPurchase": "2024-04-26T12:00:00Z"
+  }
+]

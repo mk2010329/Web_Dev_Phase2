@@ -5,8 +5,85 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
+// User model
+model User {
+  username        Int    @id
+  password        Int
+  name            String
+  surname         String
+  shippingAddress String
+
+  cartItems               CartItem[]
+  currentlySelling        CurrentlySellingItem[]
+  itemSaleHistoryAsSeller ItemSaleHistory[]      @relation("seller")
+  itemSaleHistoryAsBuyer  ItemSaleHistory[]      @relation("buyer")
+  bankAccount             BankAccount?
+}
+
+// Item model
+model Item {
+  itemId           Int    @id
+  itemName         String
+  price            Int
+  quantity         Int
+  selectedQuantity Int? // Not sure about the meaning of this field, so it's marked as optional
+  pictureUrl       String
+  category         String
+
+  cartItems        CartItem[]
+  itemSaleHistory  ItemSaleHistory[]
+  currentlySelling CurrentlySellingItem[]
+}
+
+// CartItem model
+model CartItem {
+  username Int
+  itemId   Int
+
+  user User @relation(fields: [username], references: [username])
+  item Item @relation(fields: [itemId], references: [itemId])
+
+  @@id([username, itemId])
+}
+
+// CurrentlySellingItem model
+model CurrentlySellingItem {
+  username Int
+  itemId   Int
+
+  user User @relation(fields: [username], references: [username])
+  item Item @relation(fields: [itemId], references: [itemId])
+
+  @@id([username, itemId])
+}
+
+// Item_Sale_History model
+model ItemSaleHistory {
+  soldByUsername   Int
+  boughtByUsername Int
+  itemId           Int
+  dateOfPurchase   DateTime
+  sellingUser      User     @relation("seller", fields: [soldByUsername], references: [username])
+  buyingUser       User     @relation("buyer", fields: [boughtByUsername], references: [username])
+  item             Item     @relation(fields: [itemId], references: [itemId])
+
+  @@id([soldByUsername, boughtByUsername, itemId])
+}
+
+// BankAccount model
+model BankAccount {
+  accountNumber Int @id
+  amount        Int
+
+  user     User @relation(fields: [username], references: [username])
+  username Int  @unique
+}

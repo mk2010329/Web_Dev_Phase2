@@ -1,11 +1,14 @@
-let itemList = []
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
 
+let itemList = []
 export function uploadItem(newItem){
     let items = JSON.parse(localStorage.getItem("itemList"));
     items.push(newItem);
     localStorage.setItem("itemList", JSON.stringify(items));
     return "Item add to items" ;
 }
+
 const items = JSON.parse(await getItems())
 export function searchItem(id) {
     return items.find(i => i.id == id)
