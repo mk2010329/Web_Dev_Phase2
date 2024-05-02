@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Item</title>
+    <link rel="stylesheet" href="styles/upload.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <script src="scripts/header_footer.js"></script>
+  </head>
+  <body>
+    <script type="module" src="scripts/upload.js"></script>
+
+    <!-- <iframe src="./header.html" frameborder="0" width="100%"></iframe> -->
+
+    <header id="header"></header>
+
+    <!-- headber -->
+
+    <div class="Container">
+      <h2>Upload Item</h2>
+      <form id="Upload">
+        <div class="formGroup">
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName" name="itemName" required />
+        </div>
+        <div class="formGroup">
+          <label for="price">Price:</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            min="0"
+            step="0.01"
+            required
+          />
+        </div>
+        <div class="formGroup">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required />
+        </div>
+        <div class="formGroup">
+          <label for="picture">Picture:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+        </div>
+        <div class="formGroup" id="Cate">
+          <label>Category:</label><br />
+          <input
+            type="radio"
+            id="laptop"
+            name="category"
+            value="laptop"
+            required
+          />
+          <label for="laptop">Laptop</label><br />
+          <input type="radio" id="mobile" name="category" value="mobile" />
+          <label for="mobile">Mobile</label><br />
+          <input
+            type="radio"
+            id="accessories"
+            name="category"
+            value="accessories"
+          />
+          <label for="accessories">Accessories</label><br />
+        </div>
+        <button type="submit">Upload Item</button>
+      </form>
+      <div id="message"></div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+  </body>
+</html>

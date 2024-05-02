@@ -1,0 +1,277 @@
+@font-face {
+    font-family: metro;
+    src: url(Metropolis-Regular.ttf);
+ } 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: metro;
+}
+
+body {
+    
+    margin: auto;
+}
+
+.below-header-div {
+    background-size: cover;
+    /* background-color: #020617; */
+    height: 30vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.header-nav {
+
+    background-color: rgb(227, 227, 227);
+    border-radius: 2ch;
+    margin-top: 1em;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        
+        li {
+            padding: 2rem;
+        }
+
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    /* background-color: #87EDC2; */
+    border-radius: 2ch;
+    margin-top: 1em;
+    margin: 1em;
+
+    h1 { padding: 1em;}
+
+}
+
+.popup-sell-div {
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 2ch;
+    padding: 1em;
+    /* margin: 1em; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        background-color: rgb(103, 230, 255);
+        border-radius: 3ch;
+        width: 5em;
+
+        text-align: center;
+        line-height: 40px;
+    }
+
+    div {
+        width: 10em;
+    }
+}
+.w3-bar .w3-bar-item{
+    padding:8px 16px;float:left;width:auto;display:block;outline:0;background-color: white;
+}
+.w3-bar {
+    /* position:static;float:left; */
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+.w3-bar .w3-button{
+    white-space:normal;
+}
+.w3-button:hover{color:#000!important;background-color:#ccc!important;}
+.w3-container,.w3-panel{
+    padding:0.01em 16px;
+}.w3-panel{
+    margin-top:16px;margin-bottom:16px
+}
+.w3-container:after,.w3-container:before{content:"";display:table;clear:both}
+
+/* .items-grid {
+
+    article {
+        display: flex;
+        justify-content: center;
+    }
+
+    article img{
+        width: 10em;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30fr));
+} */
+
+.items-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    font-size: small;
+
+    .card:hover {
+        box-shadow: 0 28px 36px 0 rgba(88, 11, 11, 0.2);
+    }
+}
+
+.items-list .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+        width: 100%;
+        height: 70%;
+        flex: 1;
+    }
+
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+#sale-history {
+    .sale-history-info {
+        
+        padding: 1em;
+    }
+}
+
+.popup-btn{
+    z-index: 2;
+    color: #fff;
+    background: #555;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*   Open state of the dialog  */
+dialog[open] {
+    opacity: 1;
+    transform: scaleY(1);
+    translate: 120% 500%;
+
+    position: relative;
+
+    width: 600px;
+    margin-left: -300px;
+
+    height: 300px;
+    margin-top: -200px;
+  }
+  
+  /*   Closed state of the dialog   */
+  dialog {
+    opacity: 0;
+    transform: scaleY(1);
+    transition:
+      opacity 0.7s ease-out,
+      transform 0.7s ease-out,
+      overlay 0.7s ease-out allow-discrete,
+      display 0.7s ease-out allow-discrete;
+    /* Equivalent to
+    transition: all 0.7s allow-discrete; */
+    translate: -50% -100%;
+  }
+  
+  /*   Before-open state  */
+  /* Needs to be after the previous dialog[open] rule to take effect,
+      as the specificity is the same */
+  @starting-style {
+    dialog[open] {
+      opacity: 0;
+      transform: scaleY(1);
+    }
+  }
+  
+  /* Transition the :backdrop when the dialog modal is promoted to the top layer */
+  dialog::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+    transition:
+      display 0.7s allow-discrete,
+      overlay 0.7s allow-discrete,
+      background-color 0.7s;
+    /* Equivalent to
+    transition: all 0.7s allow-discrete; */
+  }
+  
+  dialog[open]::backdrop {
+    background-color: rgb(0 0 0 / 25%);
+  }
+  
+  /* This starting-style rule cannot be nested inside the above selector
+  because the nesting selector cannot represent pseudo-elements. */
+  
+  @starting-style {
+    dialog[open]::backdrop {
+      background-color: rgb(0 0 0 / 0%);
+    }
+  }
+
+
+#dialog-wrapper {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    button {
+        margin: 1em;
+        translate: 35%;
+        z-index: 2;
+        color: #fff;
+        background: #555;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    #dialog-content {
+        padding: 1em;
+    }
+
+}
+
+dialog form {
+    padding: 1em;
+    input {
+        padding: 1em;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .popup-sell-div {
+        display: none;
+
+    }
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles/home_page_style.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <br /><br />
+
+    <div class="nav">
+      <div class="search">
+        <input placeholder="Search..." type="text" id="searchBar" />
+        <button type="submit" id="goBtn">Go</button>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="item-list" id="item-list"></div>
+
+    <div class="main" id="main">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radioBtn" id="radio1" />
+          <input type="radio" name="radioBtn" id="radio2" />
+          <input type="radio" name="radioBtn" id="radio3" />
+          <input type="radio" name="radioBtn" id="radio4" />
+
+          <div class="slide first">
+            <img src="images/laptop_alt.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/mobile_alt2.webp" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/graphic-art-photo.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/accessories_slider.jpeg" alt="" />
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="heading" id="heading-id">
+      <hr class="hr-text" data-content="Categories" />
+    </div>
+
+    <div class="categories">
+      <div class="computer">
+        <div class="comp-pic" id="comp-pic">
+          <img src="/images/20210913111446.png" alt="" class="laptop_img"/>
+          <p class="comp-title"><b> Laptops</b></p>
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="mob-pic" id="mob-pic">
+          <img src="/images/690da04aa172103f80fc1e9c6901232f.webp" alt="" class="mobile_img"/>
+          <p class="mob-title"><b>Mobile Phones</b></p>
+        </div>
+      </div>
+      <div class="accessories">
+        <div class="acc-pic" id="acc-pic">
+          <img src="images/download.jpg" alt="" class="acc_img"/>
+          <p class="acc-title"><b>Accessories</b></p>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/home_page.js"></script>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+    <footer id="footer"></footer>
+    <script src="/scripts/header_footer.js"></script>
+  </body>
+</html>

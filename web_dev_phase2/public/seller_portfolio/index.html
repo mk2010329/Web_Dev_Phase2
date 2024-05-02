@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller's Portfolio</title>
+    <link rel="stylesheet" href="/styles/seller_portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="../scripts/header_footer.js"></script>
+    <header id="header"></header>
+
+    <div class="below-header-div"></div>
+    <main>
+      <div class="popup-sell-div">
+        <div class="popup-sell-div-text">
+          <h2>Sell an Item</h2>
+          <p>Sell an item by clicking the button</p>
+        </div>
+        <a href="/upload.html"
+          ><span class="material-symbols-outlined">payments</span>Sell</a>
+      </div>
+
+      <h1>Your Items</h1>
+
+      <nav class="w3-bar">
+        <button class="w3-bar-item w3-button" id="current-items-button">
+          Currently Selling Items
+        </button>
+        <button class="w3-bar-item w3-button" id="sale-history-button">
+          Sale History
+        </button>
+        <button class="w3-bar-item w3-button" id="purchase-history-button">
+          Purchase History
+        </button>
+      </nav>
+
+      <section
+        id="currently-selling-items"
+        class="w3-container tab"
+        style="display: none"
+      >
+        <h2>Currently Selling Items</h2>
+
+        <div class="items-list"></div>
+      </section>
+
+      <section id="sale-history" class="w3-container tab" style="display: none">
+        <h2>Sale History</h2>
+        <div class="sale-history-info">
+          <h4>
+            You can find the items and the sale history details as follows:
+          </h4>
+          <br />
+        </div>
+
+        <div class="items-list"></div>
+      </section>
+
+      <section
+        id="purchase-history"
+        class="w3-container tab"
+        style="display: none"
+      >
+        <h2>Purchase History</h2>
+
+        <div class="items-list"></div>
+      </section>
+
+      
+
+    </main>
+    <div id="dialog-wrapper">
+      <dialog id="item-popup-dialog">
+        <div id="dialog-content"></div>
+        <form method="dialog" id="update-item-form"></form>
+      </dialog>
+    </div>
+    
+
+    <script type="module" src="/scripts/swiper_seller_portfolio.js"></script>
+    <footer id="footer"></footer>
+  </body>
+</html>
