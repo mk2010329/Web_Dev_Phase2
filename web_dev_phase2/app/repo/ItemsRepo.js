@@ -1,10 +1,11 @@
-"use server";
 
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// Q1 : Total amount of purchases per item and per year
-export async function getTotalPurchasesPerItemPerYear() {
+class ItemsRepo{
+
+  // Q1 : Total amount of purchases per item and per year
+   async  getTotalPurchasesPerItemPerYear() {
   const result = await prisma.itemSaleHistory.groupBy({
     //SQLite function to extract the year from a date.
     by: ["item.itemName", 'STRFTIME("%Y", dateOfPurchase) as year'],
@@ -22,7 +23,7 @@ export async function getTotalPurchasesPerItemPerYear() {
 }
 
 // Q2: The most 3 items bought over the last 6 months
-export async function getTop3ItemsLastSixMonths() {
+ async  getTop3ItemsLastSixMonths() {
   const result = await prisma.itemSaleHistory.findMany({
     where: {
       dateOfPurchase: {
@@ -54,7 +55,7 @@ export async function getTop3ItemsLastSixMonths() {
 }
 
 // Q3 : The categories never purchased
-export async function getCategoriesNeverPurchased() {
+ async  getCategoriesNeverPurchased() {
   const result = await prisma.item.findMany({
     where: {
       itemSaleHistory: {
@@ -71,12 +72,16 @@ export async function getCategoriesNeverPurchased() {
   return result;
 }
 
-// test Q it did not work to make me test the code
-export default async function test() {
-  console.log("Start !!!!");
-  const totalPurchasesPerItemPerYear = await getTotalPurchasesPerItemPerYear();
-  console.log(totalPurchasesPerItemPerYear.length);
-  console.log("End !!!!");
 }
 
-test();
+export default new ItemsRepo();
+
+// test Q it did not work to make me test the code
+// export default async function test() {
+//   console.log("Start !!!!");
+//   const totalPurchasesPerItemPerYear = await getTotalPurchasesPerItemPerYear();
+//   console.log(totalPurchasesPerItemPerYear.length);
+//   console.log("End !!!!");
+// }
+
+// test();

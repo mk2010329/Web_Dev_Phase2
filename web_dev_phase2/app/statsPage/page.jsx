@@ -1,4 +1,4 @@
-import * as ItemsRepo from "../repo/ItemsRepo";
+import ItemsRepo from "@/app/repo/ItemsRepo";
 
 
 export default async function Home() {
