@@ -60,6 +60,3 @@ export async function uploadItemRpo(newItem){
     alert("Item uploaded successfully.");
     return "Item uploaded successfully.";
 }
-
-
-
