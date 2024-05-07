@@ -4,6 +4,13 @@ const prisma = new PrismaClient();
 
 class ItemsRepo{
 
+  async getItems(){
+    try {
+      return prisma.item.findMany()
+  } catch (error) {
+      return { error }
+  }
+  }
   // Q1 : Total amount of purchases per item and per year
    async  getTotalPurchasesPerItemPerYear() {
   const result = await prisma.itemSaleHistory.groupBy({
