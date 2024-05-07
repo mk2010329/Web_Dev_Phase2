@@ -21,57 +21,109 @@ export async function getTotalUsers() {
   }
 }
 
-//Not work yet
-export async function getUsersRoleCounts() {
-  try {
-    const userCounts = await prisma.user.aggregate({
-      _count: {
-        seller: {
-          count: {
-            itemSaleHistoryAsSeller: {
-              _distinct: true,
-            },
-          },
-        },
-        buyer: {
-          count: {
-            itemSaleHistoryAsBuyer: {
-              _distinct: true,
-            },
-          },
-        },
-        bothSellerAndBuyer: {
-          count: {
-            _and: [
-              { itemSaleHistoryAsSeller: { _count: { gt: 0 } } },
-              { itemSaleHistoryAsBuyer: { _count: { gt: 0 } } },
-            ],
-          },
+// Q1 : it get buyers per location (It work)
+export async function getBuyersPerLocation() {
+  const userData = await prisma.user.findMany({
+    select: {
+      shippingAddress: true,
+      itemSaleHistoryAsBuyer: {
+        select: {
+          boughtByUsername: true,
         },
       },
-    });
-    return userCounts;
-  } catch (error) {
-    throw new Error(`Unable to fetch user role counts: ${error}`);
-  }
+    },
+  });
+
+  const result = userData.reduce((acc, curr) => {
+    const location = curr.shippingAddress;
+    const buyers = new Set(
+      curr.itemSaleHistoryAsBuyer.map(
+        ({ boughtByUsername }) => boughtByUsername
+      )
+    );
+
+    if (!acc[location]) {
+      acc[location] = { numBuyers: 0, location };
+    }
+
+    acc[location].numBuyers = buyers.size;
+
+    return acc;
+  }, {});
+
+  return result;
 }
 
-// Not work yet
+// Q2 : it get most selling user (it work)
 export async function getMostSellingUser() {
   try {
     const mostSellingUser = await prisma.user.findFirst({
       orderBy: {
-        _count: {
-          itemSaleHistoryAsSeller: "desc",
+        itemSaleHistoryAsSeller: {
+          _count: "desc",
         },
       },
     });
-
     return mostSellingUser;
   } catch (error) {
     throw new Error(`Unable to fetch the most selling user: ${error}`);
   }
 }
 
-// export async function (){
-// }
+// Q3 : these queryes get be useful as combnation (It work )
+// Get users who sell only
+export async function getSellerUsers() {
+  return await prisma.user.findMany({
+    where: {
+      itemSaleHistoryAsSeller: {
+        some: {},
+      },
+    },
+    select: {
+      username: true,
+      name: true,
+      surname: true,
+    },
+  });
+}
+
+// Get users who buy only
+export async function getBuyerUsers() {
+  return await prisma.user.findMany({
+    where: {
+      itemSaleHistoryAsBuyer: {
+        some: {},
+      },
+    },
+    select: {
+      username: true,
+      name: true,
+      surname: true,
+    },
+  });
+}
+
+// Get users who sell and buy at the same time
+export async function getBothSellersAndBuyers() {
+  return await prisma.user.findMany({
+    where: {
+      AND: [
+        {
+          itemSaleHistoryAsSeller: {
+            some: {},
+          },
+        },
+        {
+          itemSaleHistoryAsBuyer: {
+            some: {},
+          },
+        },
+      ],
+    },
+    select: {
+      username: true,
+      name: true,
+      surname: true,
+    },
+  });
+}
