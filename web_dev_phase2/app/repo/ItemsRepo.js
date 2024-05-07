@@ -4,6 +4,8 @@ const prisma = new PrismaClient();
 
 class ItemsRepo{
 
+
+
   // Q1 : Total amount of purchases per item and per year
    async  getTotalPurchasesPerItemPerYear() {
   const result = await prisma.itemSaleHistory.groupBy({
@@ -24,31 +26,32 @@ class ItemsRepo{
 
 // Q2: The most 3 items bought over the last 6 months
  async  getTop3ItemsLastSixMonths() {
-  const result = await prisma.itemSaleHistory.findMany({
-    where: {
-      dateOfPurchase: {
-        gte: new Date(Date.now() - 6 * 30 * 24 * 60 * 60 * 1000),
-      },
-    },
-    select: {
-      item: {
-        select: {
-          itemName: true,
-        },
-      },
-      _count: {
-        select: {
-          quantity: true,
-        },
-      },
-    },
-    orderBy: {
-      _count: {
-        quantity: "desc",
-      },
-    },
-    take: 3,
-  });
+
+  // const result = await prisma.itemSaleHistory.findMany({
+  //   where: {
+  //     dateOfPurchase: {
+  //       gte: new Date(Date.now() - 6 * 30 * 24 * 60 * 60 * 1000),
+  //     },
+  //   },
+  //   select: {
+  //     item: {
+  //       select: {
+  //         itemName: true,
+  //       },
+  //     },
+  //     _count: {
+  //       select: {
+  //         quantity: true,
+  //       },
+  //     },
+  //   },
+  //   orderBy: {
+  //     _count: {
+  //       quantity: "desc",
+  //     },
+  //   },
+  //   take: 3,
+  // });
   console.log(`DONE :::: ${result}`);
 
   return result;
@@ -70,7 +73,16 @@ class ItemsRepo{
   console.log(`DONE :::: ${result}`);
 
   return result;
-}
+  }
+
+  async getAllItems() {
+    try{
+      return await prisma.item.findMany()
+    }
+    catch(error){
+      return {error}
+    }
+  }
 
 }
 
