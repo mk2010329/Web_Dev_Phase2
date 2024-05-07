@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function header() {
     return (
-        <main className={styles.main}>
+
     <header id="headbar" className={styles.headBar}>
             <h1><a href="home_page.html">Qtech</a></h1>
             <div id="centerDiv" className={styles.centerDiv}>
@@ -41,7 +41,7 @@ export default function header() {
                 </ul>
             </div>
         </header>
-        </main>
+   
     )
 }
 
