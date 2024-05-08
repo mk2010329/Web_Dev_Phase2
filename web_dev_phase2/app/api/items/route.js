@@ -6,11 +6,11 @@ export async function GET(request){
     // const name = searchParams.get('name');
 
     // if(!name){//if there is no name
-        const Items = await ItemsRepo.getAllItems();
+        const Items = await ItemsRepo.getItems();
         return Response.json(Items,{status:200});
     // }else{//if there is a name
-    //     const Items = await ItemsRepo.getItem(name);
-    //     return Response.json(Items,{status:200});
+        // const Items = await ItemsRepo.getItem(name);
+        // return Response.json(Items,{status:200});
     // }
 }
 

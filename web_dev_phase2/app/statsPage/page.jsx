@@ -30,6 +30,9 @@ export default async function Home() {
       
       <PieApp />
 
+          <p>Date : 6th may 2024</p>
+   
+
     </main>);
 }
   
