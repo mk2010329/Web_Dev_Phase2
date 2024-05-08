@@ -5,5 +5,19 @@
 }
 body{
     background-color: rgba(67, 55, 55, 0.154);
-    color: aliceblue;
+    color: black;
+}
+
+main {
+    height: 100%;
+    padding: 2em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerText {
+    background-color: aqua;
 }

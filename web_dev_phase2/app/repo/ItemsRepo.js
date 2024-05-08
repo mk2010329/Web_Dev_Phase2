@@ -1,10 +1,10 @@
-"use server";
-
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
+class ItemsRepo{
+
 //Done (it work)
-export async function getAllItems() {
+ async getAllItems() {
   try {
     const items = await prisma.item.findMany();
     return items;
@@ -13,7 +13,7 @@ export async function getAllItems() {
   }
 }
 //Done (it work)
-export async function getTotalSalesCount() {
+  async   getTotalSalesCount() {
   try {
     const count = await prisma.itemSaleHistory.count();
     return count;
@@ -23,20 +23,20 @@ export async function getTotalSalesCount() {
 }
 
 // Q1 :Total amount of purchases per item and per year (work)
-export async function getPurchasesPerProductPerYear() {
-  const purchaseData = await prisma.itemSaleHistory.findMany({
-    select: {
-      item: {
-        select: {
-          itemName: true,
-          price: true,
+  async getPurchasesPerProductPerYear() {
+    const purchaseData = await prisma.itemSaleHistory.findMany({
+      select: {
+        item: {
+          select: {
+            itemName: true,
+            price: true,
+          },
         },
+        dateOfPurchase: true,
       },
-      dateOfPurchase: true,
-    },
-    orderBy: {
-      dateOfPurchase: "desc",
-    },
+      orderBy: {
+        dateOfPurchase: "desc",
+      },
   });
 
   const result = purchaseData.reduce((acc, curr) => {
@@ -61,10 +61,10 @@ export async function getPurchasesPerProductPerYear() {
 }
 
 // Q2 : The most 3 items bought over the last 6 months (It work)
-export async function getMostBoughtProductsLastSixMonths() {
+  async   getMostBoughtProductsLastSixMonths() {
   const sixMonthsAgo = new Date();
   sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-
+    console.log("line 67");
   const mostBoughtProducts = await prisma.itemSaleHistory.findMany({
     where: {
       dateOfPurchase: {
@@ -79,7 +79,7 @@ export async function getMostBoughtProductsLastSixMonths() {
       },
     },
   });
-
+  console.log("line 82");
   const result = Object.values(
     mostBoughtProducts.reduce((acc, curr) => {
       const itemName = curr.item.itemName;
@@ -95,13 +95,13 @@ export async function getMostBoughtProductsLastSixMonths() {
   )
     .sort((a, b) => b.count - a.count)
     .slice(0, 3);
-
+  
   console.log(`DONE :::: ${JSON.stringify(top3Items)}`);
   return top3Items;
 }
 
 // Q3 : The categories never purchased
-export async function getItemNeverPurchasedTypes() {
+  async   getItemNeverPurchasedTypes() {
   const neverPurchasedTypes = await prisma.item.findMany({
     where: {
       itemSaleHistory: {
@@ -118,7 +118,7 @@ export async function getItemNeverPurchasedTypes() {
 }
 
 // Q4 : The total number of items in our website (It work)
-export async function getTotalItems() {
+  async   getTotalItems() {
   try {
     const count = await prisma.item.count();
     return count;
@@ -128,7 +128,7 @@ export async function getTotalItems() {
 }
 
 // Q5 : The average of item price in our website (It work)
-export async function getAverageItemPrice() {
+  async   getAverageItemPrice() {
   try {
     const result = await prisma.item.aggregate({
       _avg: {
@@ -140,9 +140,12 @@ export async function getAverageItemPrice() {
     throw new Error(`Unable to fetch average item price: ${error}`);
   }
 }
+}
+
+export default new ItemsRepo()
 
 // Q6 : it get purchases per month (It work ) but some logic error
-// export async function getPurchasesPerMonth() {
+//   async   getPurchasesPerMonth() {
 //   const purchaseData = await prisma.itemSaleHistory.findMany({
 //     select: {
 //       item: {

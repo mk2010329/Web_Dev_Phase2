@@ -46,12 +46,25 @@
   width: var(--max-width);
 }
 
+.gridGlance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  max-width: 100%;
+  /* width: var(--max-width); */
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  height: 20em;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .card span {

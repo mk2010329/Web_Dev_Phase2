@@ -3,6 +3,8 @@ import ItemsRepo from "@/app/repo/ItemsRepo";
 // import { Pie } from 'react-chartjs-2';
 import React from 'react';
 import PieApp from "./PieApp"
+import CountApp from "./CountApp"
+import styles from "@/app/page.module.css"
 
 export default async function Home() {
 
@@ -12,23 +14,57 @@ export default async function Home() {
      const items = await response.json()
     // const items = await ItemsRepo.getAllItems()
     return(
-    <main>
-        {/* <h1>{totalPurchasesPerItemPerYear}</h1>
-        {top3ItemsLastSixMonths.map((item) => (
-        <div key={item.itemId}>
-          <h2>{item.itemId}</h2>
-          <p>Date : {item.dateOfPurchase}</p>
-        </div>
-      ))} */}
+    <main className={styles.main}>
 
-      {items.map((item) => (
-        <div key={item.itemName}>
-          <h2>{item.itemName}</h2>
-          <p>Quantity : {item.quantity}</p>
+      <h1 style={{padding: "0.2em"}}>Stats at a Glance:</h1>
+      <div className={styles.gridGlance}>
+        <div className={styles.card}>
+            <img
+              src="/person.png"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          <h2>Total Users</h2>
+          <h1><CountApp count={67}/></h1>
         </div>
-      ))}
+        <div className={styles.card}>
+            <img
+              src="/shopping_bag.png"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          <h2>Total Items</h2>
+          <h1><CountApp count={123}/></h1>
+        </div>
+        <div className={styles.card}>
+            <img
+              src="/payments.png"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          <h2>Total Transactions</h2>
+          <h1><CountApp count={456}/></h1>
+        </div>
+      </div>
       
-      <PieApp />
+      <h1 style={{padding: "2em"}}>Stats in Detail:</h1>
+
+      <div style={{padding: "2em"}}>
+        {items.map((item) => (
+          <div key={item.itemName} className={styles.grid}>
+            <h2>{item.itemName}</h2>
+            <p>Quantity : {item.quantity}</p>
+          </div>
+        ))}
+        <PieApp />
+      </div>
+      
 
           <p>Date : 6th may 2024</p>
    
