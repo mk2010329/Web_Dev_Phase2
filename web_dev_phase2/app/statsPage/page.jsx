@@ -4,6 +4,8 @@ import ItemsRepo from "@/app/repo/ItemsRepo";
 import React from 'react';
 import PieApp from "./PieApp"
 import CountApp from "./CountApp"
+import BarApp from "./BarApp"
+import LineApp from "./LineApp"
 import styles from "@/app/page.module.css"
 
 export default async function Home() {
@@ -16,6 +18,7 @@ export default async function Home() {
     return(
     <main className={styles.main}>
 
+      {/* counters to show total number of users, items, etc. */}
       <h1 style={{padding: "0.2em"}}>Stats at a Glance:</h1>
       <div className={styles.gridGlance}>
         <div className={styles.card}>
@@ -55,18 +58,33 @@ export default async function Home() {
       
       <h1 style={{padding: "2em"}}>Stats in Detail:</h1>
 
-      <div style={{padding: "2em"}}>
-        {items.map((item) => (
-          <div key={item.itemName} className={styles.grid}>
-            <h2>{item.itemName}</h2>
-            <p>Quantity : {item.quantity}</p>
-          </div>
-        ))}
-        <PieApp />
+      {/* Pie chart for distribution of item quantities */}
+      <h2>Quantity of Items Relative to each other:</h2>
+      <div style={{padding: "2em"}} className={styles.gridGlance}>
+        <div>
+          {items.map((item) => (
+            <div key={item.itemName} >
+              <h2>{item.itemName}</h2>
+              <p>Quantity : {item.quantity}</p>
+            </div>
+          ))}
+        </div>
+        <div className={styles.centerChart}>
+          <PieApp />
+        </div>
       </div>
       
+      {/* bar chart  */}
+      <h2>Items Most Bought Over the Last Six Months:</h2>
+      <div>
+        <BarApp />
+      </div>
 
-          <p>Date : 6th may 2024</p>
+      {/* Line chart */}
+      <h2>Items Most Bought Over the Last Six Months:</h2>
+      <div>
+        <LineApp />
+      </div>
    
 
     </main>);
