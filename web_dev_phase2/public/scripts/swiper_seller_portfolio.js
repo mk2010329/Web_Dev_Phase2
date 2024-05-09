@@ -1,9 +1,11 @@
-import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
-import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
+// import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
+// import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
 
-const loggedInUser = await UsersRepo.getLoggedInUser()
-
-
+//const loggedInUser = await UsersRepo.getLoggedInUser()
+const loggedInUser = await localStorage.loggedInUser
+console.log(loggedInUser.name)
+const loggedUserObj = JSON.parse(loggedInUser)
+console.log(loggedUserObj.name)
 document.getElementById("currently-selling-items").style.display = "block";
 displayCurrentUsersItems()
 
@@ -12,7 +14,7 @@ document.getElementById("purchase-history-button").addEventListener("click", dis
 document.getElementById("sale-history-button").addEventListener("click", displayUsersSaleHistory)
 
 document.querySelector(".below-header-div").innerHTML =
-                `<h1>Hi ${loggedInUser.name}&#x1F44B;</h1>`
+                `<h1>Hi ${loggedUserObj.name}&#x1F44B;</h1>`
 
 
 function currentItemCardTemplate(item) {
@@ -47,7 +49,7 @@ function displayCurrentUsersItems() {
         }
         document.getElementById("currently-selling-items").style.display = "block";
         document.querySelector("#currently-selling-items > .items-list").innerHTML = 
-                loggedInUser.listOfCurrentItems
+                loggedUserObj.listOfCurrentItems
                         .map(item => currentItemCardTemplate(item)).join(" ")
         
         document.querySelectorAll(".popup-btn").forEach(c => c.addEventListener("click", (event) => {
@@ -95,7 +97,7 @@ function displayPurchaseHistory() {
         }
         document.getElementById("purchase-history").style.display = "block";
         document.querySelector("#purchase-history > .items-list").innerHTML = 
-                loggedInUser.listOfPurchasedItems
+                loggedUserObj.listOfPurchasedItems
                         .map(item => soldItemCardTemplate(item)).join(" ")
 
 }
@@ -108,10 +110,10 @@ async function displayUsersSaleHistory() {
         }
         document.getElementById("sale-history").style.display = "block"
         const saleHistoryInfo = document.querySelector(".sale-history-info")
-        saleHistoryInfo.innerHTML = `<h3><b>Number of Items Sold: </b>${loggedInUser.listOfSoldItems.length}</h3>`
+        saleHistoryInfo.innerHTML = `<h3><b>Number of Items Sold: </b>${loggedUserObj.listOfSoldItems.length}</h3>`
 
         document.querySelector("#sale-history > .items-list").innerHTML =
-                loggedInUser.listOfSoldItems
+                loggedUserObj.listOfSoldItems
                         .map(item => soldItemCardTemplate(item)).join(" "); 
 
 }
