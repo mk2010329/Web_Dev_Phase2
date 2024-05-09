@@ -55,9 +55,9 @@ export async function getBuyersPerLocation() {
 }
 
 // Q2 : it get most selling user (it work)
-export async function getMostSellingUser() {
+export async function getMostSellingUsers() {
   try {
-    const mostSellingUser = await prisma.user.findFirst({
+    const mostSellingUser = await prisma.user.findMany({
       orderBy: {
         itemSaleHistoryAsSeller: {
           _count: "desc",
@@ -72,58 +72,130 @@ export async function getMostSellingUser() {
 
 // Q3 : these queryes get be useful as combnation (It work )
 // Get users who sell only
-export async function getSellerUsers() {
-  return await prisma.user.findMany({
-    where: {
-      itemSaleHistoryAsSeller: {
-        some: {},
+export async function getSellerUsersWithItemCount() {
+  try {
+    const sellerUsers = await prisma.user.findMany({
+      where: {
+        itemSaleHistoryAsSeller: {
+          some: {},
+        },
       },
-    },
-    select: {
-      username: true,
-      name: true,
-      surname: true,
-    },
-  });
+      select: {
+        username: true,
+        name: true,
+        surname: true,
+        itemSaleHistoryAsSeller: {
+          select: {
+            itemId: true,
+          },
+        },
+      },
+    });
+
+    const sellerUsersWithItemCount = sellerUsers.map((user) => {
+      const itemCount = user.itemSaleHistoryAsSeller.length;
+      return {
+        username: user.username,
+        name: user.name,
+        surname: user.surname,
+        itemCount: itemCount,
+      };
+    });
+
+    return sellerUsersWithItemCount;
+  } catch (error) {
+    throw new Error(`Unable to fetch seller users with item count: ${error}`);
+  }
 }
 
 // Get users who buy only
-export async function getBuyerUsers() {
-  return await prisma.user.findMany({
-    where: {
-      itemSaleHistoryAsBuyer: {
-        some: {},
+export async function getBuyerUsersWithItemCount() {
+  try {
+    const buyerUsers = await prisma.user.findMany({
+      where: {
+        itemSaleHistoryAsBuyer: {
+          some: {},
+        },
       },
-    },
-    select: {
-      username: true,
-      name: true,
-      surname: true,
-    },
-  });
+      select: {
+        username: true,
+        name: true,
+        surname: true,
+        itemSaleHistoryAsBuyer: {
+          select: {
+            itemId: true,
+          },
+        },
+      },
+    });
+
+    const buyerUsersWithItemCount = buyerUsers.map((user) => {
+      const itemCount = user.itemSaleHistoryAsBuyer.length;
+      return {
+        username: user.username,
+        name: user.name,
+        surname: user.surname,
+        itemCount: itemCount,
+      };
+    });
+
+    return buyerUsersWithItemCount;
+  } catch (error) {
+    throw new Error(`Unable to fetch buyer users with item count: ${error}`);
+  }
 }
 
 // Get users who sell and buy at the same time
 export async function getBothSellersAndBuyers() {
-  return await prisma.user.findMany({
-    where: {
-      AND: [
-        {
-          itemSaleHistoryAsSeller: {
-            some: {},
+  try {
+    const users = await prisma.user.findMany({
+      where: {
+        AND: [
+          {
+            itemSaleHistoryAsSeller: {
+              some: {},
+            },
+          },
+          {
+            itemSaleHistoryAsBuyer: {
+              some: {},
+            },
+          },
+        ],
+      },
+      select: {
+        username: true,
+        name: true,
+        surname: true,
+        itemSaleHistoryAsSeller: {
+          select: {
+            itemId: true,
           },
         },
-        {
-          itemSaleHistoryAsBuyer: {
-            some: {},
+        itemSaleHistoryAsBuyer: {
+          select: {
+            itemId: true,
           },
         },
-      ],
-    },
-    select: {
-      username: true,
-      name: true,
-      surname: true,
-    },
-  });
+      },
+    });
+
+    const usersWithItemCount = users.map((user) => {
+      const sellerItemCount = user.itemSaleHistoryAsSeller.length;
+      const buyerItemCount = user.itemSaleHistoryAsBuyer.length;
+      return {
+        username: user.username,
+        name: user.name,
+        surname: user.surname,
+        sellerItemCount: sellerItemCount,
+        buyerItemCount: buyerItemCount,
+      };
+    });
+
+    return usersWithItemCount;
+  } catch (error) {
+    throw new Error(
+      `Unable to fetch users who are both sellers and buyers with item counts: ${error}`
+    );
+  }
 }

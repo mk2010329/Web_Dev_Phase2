@@ -1,10 +1,10 @@
+"use server";
+
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-class ItemsRepo{
-
 //Done (it work)
- async getAllItems() {
+export async function getAllItems() {
   try {
     const items = await prisma.item.findMany();
     return items;
@@ -13,7 +13,7 @@ class ItemsRepo{
   }
 }
 //Done (it work)
-  async   getTotalSalesCount() {
+export async function getTotalSalesCount() {
   try {
     const count = await prisma.itemSaleHistory.count();
     return count;
@@ -23,20 +23,20 @@ class ItemsRepo{
 }
 
 // Q1 :Total amount of purchases per item and per year (work)
-  async getPurchasesPerProductPerYear() {
-    const purchaseData = await prisma.itemSaleHistory.findMany({
-      select: {
-        item: {
-          select: {
-            itemName: true,
-            price: true,
-          },
+export async function getPurchasesPerProductPerYear() {
+  const purchaseData = await prisma.itemSaleHistory.findMany({
+    select: {
+      item: {
+        select: {
+          itemName: true,
+          price: true,
         },
-        dateOfPurchase: true,
       },
-      orderBy: {
-        dateOfPurchase: "desc",
-      },
+      dateOfPurchase: true,
+    },
+    orderBy: {
+      dateOfPurchase: "desc",
+    },
   });
 
   const result = purchaseData.reduce((acc, curr) => {
@@ -61,10 +61,10 @@ class ItemsRepo{
 }
 
 // Q2 : The most 3 items bought over the last 6 months (It work)
-  async   getMostBoughtProductsLastSixMonths() {
+export async function getMostBoughtProductsLastSixMonths() {
   const sixMonthsAgo = new Date();
   sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-    console.log("line 67");
+
   const mostBoughtProducts = await prisma.itemSaleHistory.findMany({
     where: {
       dateOfPurchase: {
@@ -79,7 +79,7 @@ class ItemsRepo{
       },
     },
   });
-  console.log("line 82");
+
   const result = Object.values(
     mostBoughtProducts.reduce((acc, curr) => {
       const itemName = curr.item.itemName;
@@ -95,13 +95,12 @@ class ItemsRepo{
   )
     .sort((a, b) => b.count - a.count)
     .slice(0, 3);
-  
-  console.log(`DONE :::: ${JSON.stringify(mostBoughtProducts)}`);
+
   return result;
 }
 
 // Q3 : The categories never purchased
-  async   getItemNeverPurchasedTypes() {
+export async function getItemNeverPurchasedTypes() {
   const neverPurchasedTypes = await prisma.item.findMany({
     where: {
       itemSaleHistory: {
@@ -118,7 +117,7 @@ class ItemsRepo{
 }
 
 // Q4 : The total number of items in our website (It work)
-  async   getTotalItems() {
+export async function getTotalItems() {
   try {
     const count = await prisma.item.count();
     return count;
@@ -128,7 +127,7 @@ class ItemsRepo{
 }
 
 // Q5 : The average of item price in our website (It work)
-  async   getAverageItemPrice() {
+export async function getAverageItemPrice() {
   try {
     const result = await prisma.item.aggregate({
       _avg: {
@@ -140,43 +139,40 @@ class ItemsRepo{
     throw new Error(`Unable to fetch average item price: ${error}`);
   }
 }
-}
-
-export default new ItemsRepo()
 
 // Q6 : it get purchases per month (It work ) but some logic error
-//   async   getPurchasesPerMonth() {
-//   const purchaseData = await prisma.itemSaleHistory.findMany({
-//     select: {
-//       item: {
-//         select: {
-//           itemName: true,
-//           price: true,
-//         },
-//       },
-//       dateOfPurchase: true,
-//     },
-//     orderBy: {
-//       dateOfPurchase: "desc",
-//     },
-//   });
+export async function getPurchasesPerMonth() {
+  const purchaseData = await prisma.itemSaleHistory.findMany({
+    select: {
+      item: {
+        select: {
+          itemName: true,
+          price: true,
+        },
+      },
+      dateOfPurchase: true,
+    },
+    orderBy: {
+      dateOfPurchase: "desc",
+    },
+  });
 
-//   const result = purchaseData.reduce((acc, curr) => {
-//     const month = curr.dateOfPurchase.getMonth() + 1; // Months are zero-indexed
-//     const year = curr.dateOfPurchase.getFullYear();
-//     const itemName = curr.item.itemName;
-//     const price = curr.item.price;
+  const result = purchaseData.reduce((acc, curr) => {
+    const month = curr.dateOfPurchase.getMonth() + 1; // Months are zero-indexed
+    const year = curr.dateOfPurchase.getFullYear();
+    const itemName = curr.item.itemName;
+    const price = curr.item.price;
 
-//     const monthYear = `${month}/${year}`; // Combine month and year into a single key
+    const monthYear = `${month}/${year}`; // Combine month and year into a single key
 
-//     if (!acc[monthYear]) {
-//       acc[monthYear] = { totalAmount: 0 };
-//     }
+    if (!acc[monthYear]) {
+      acc[monthYear] = { totalAmount: 0 };
+    }
 
-//     acc[monthYear].totalAmount += price;
+    acc[monthYear].totalAmount += price;
 
-//     return acc;
-//   }, {});
+    return acc;
+  }, {});
 
-//   return result;
-// }
+  return result;
+}
