@@ -10,11 +10,10 @@ import styles from "@/app/page.module.css"
 
 export default async function Home() {
 
-    // const totalPurchasesPerItemPerYear = await ItemsRepo.getTotalPurchasesPerItemPerYear();
-    // const top3ItemsLastSixMonths = await ItemsRepo.getTop3ItemsLastSixMonths();
+    // getting all users
      const response = await fetch('http://localhost:3000/api/items')
      const items = await response.json()
-    // const items = await ItemsRepo.getAllItems()
+     
     return(
     <main className={styles.main}>
 

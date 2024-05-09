@@ -96,8 +96,8 @@ class ItemsRepo{
     .sort((a, b) => b.count - a.count)
     .slice(0, 3);
   
-  console.log(`DONE :::: ${JSON.stringify(top3Items)}`);
-  return top3Items;
+  console.log(`DONE :::: ${JSON.stringify(mostBoughtProducts)}`);
+  return result;
 }
 
 // Q3 : The categories never purchased
