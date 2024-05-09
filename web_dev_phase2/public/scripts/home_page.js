@@ -20,12 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const data = await response.json();
   itemList= data
   localStorage.itemList = JSON.stringify(itemList)
-  
-  const url2 = '/api/phase_1/users'
-  const response2 = await fetch(url2)
-  const data2 = await response2.json();
-  userList= data2
-  localStorage.users = JSON.stringify(userList)
+
+  if(!localStorage.users){
+    const url2 = '/api/phase_1/users'
+    const response2 = await fetch(url2)
+    const data2 = await response2.json();
+    userList= data2
+    localStorage.users = JSON.stringify(userList)
+  }
+
 });
 
 computer.addEventListener('click', showComp)

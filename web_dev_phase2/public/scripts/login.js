@@ -12,12 +12,16 @@ async function handleSubmission(e) {
     console.log(loginOBJ);
     const url = `/api/phase_1/users?user=${loginOBJ.user}&pass=${loginOBJ.pass}`
     const response = await fetch(url)
-    const user = await response.json();
-    if(user){ // if user exists on the system
-        localStorage.loggedInUser = JSON.stringify(user)
-    window.location.href = "../home_page.html";
-    document.querySelector("#log-in-icon").classList.add("hidden");
-    document.querySelector("#rightHeader").classList.remove("hidden");
+    const User = await response.json();
+    if(User){ // if user exists on the system
+        const allUsers = JSON.parse(localStorage.users)
+        console.log(allUsers);
+        const updatedLoggedInUser = allUsers.find(user=>user.id==User.id)
+        localStorage.loggedInUser = JSON.stringify(updatedLoggedInUser)
+        console.log(localStorage.loggedInUser);
+        window.location.href = "../home_page.html";
+        document.querySelector("#log-in-icon").classList.add("hidden");
+        document.querySelector("#rightHeader").classList.remove("hidden");
     }else{
     
     alert("Incorrect Username and/or Password")
