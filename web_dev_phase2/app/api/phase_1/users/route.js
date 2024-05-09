@@ -13,8 +13,5 @@ export async function GET(request){
     else{
         User = await UsersRepo.getUsers();
     }
-
-  
-    
     return Response.json(User,{status:200});
 }

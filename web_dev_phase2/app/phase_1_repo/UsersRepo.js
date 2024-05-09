@@ -15,27 +15,47 @@ class UsersRepo{
   return data
  }
 
-  async  findUser(username, password) {
-  console.log("hello");
-  const data = await fs.readJSON(this.filePath)
-  usersList =  data
-  // localStorage.users = JSON.stringify(usersList);
+ async findUser(username,password){
+  usersList = await fs.readJSON(this.filePath)
+  //console.log(JSON.stringify(usersList))
+  //localStorage.users = JSON.stringify(usersList);
   // let list = localStorage.users;
-  const foundUser = usersList.find(
-    (user) => user.username == username && user.password == password
-  );
-  if (foundUser === undefined) {
-    return undefined;
-  } else {
-    console.log(foundUser);
-    loggedInUser = foundUser;
-    return loggedInUser;
-  }
-}
-
+   const foundUser = usersList.find(
+     (user) => user.username == username && user.password == password
+   );
+   console.log(foundUser)
+   if(foundUser === undefined){
+    return "Not Found"
+   }else{
+    return foundUser;
+   }
+  // if (foundUser === undefined) {
+  //   return undefined;
+  // } else {
+  //   console.log(foundUser);
+  //   loggedInUser = foundUser;
+ }
 }
 
 export default new UsersRepo();
+
+export async function findUser(username, password) {
+  return 'hi'
+  // usersList = await fs.readJSON('./../data/users.json')
+  // localStorage.users = JSON.stringify(usersList);
+  // let list = localStorage.users;
+  // const foundUser = usersList.find(
+  //   (user) => user.username == username && user.password == password
+  // );
+  // if (foundUser === undefined) {
+  //   return undefined;
+  // } else {
+  //   console.log(foundUser);
+  //   loggedInUser = foundUser;
+  //   return loggedInUser;
+  // }
+}
+
 
 async function loadUsers() {
   let users = localStorage.users;
