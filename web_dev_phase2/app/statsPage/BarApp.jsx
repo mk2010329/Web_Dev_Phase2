@@ -10,12 +10,12 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import ItemsRepo from "@/app/repo/ItemsRepo";
+import * as ItemsRepo from "@/app/repo/ItemsRepo";
 import React, { useState, useEffect } from 'react';
 import { Metrophobic } from 'next/font/google';
 import {faker} from "@faker-js/faker"
 
-export default function PieApp() {
+export default function BarApp( {userData} ) {
 
     ChartJS.register(
       CategoryScale,
@@ -39,20 +39,15 @@ export default function PieApp() {
         }
       }
       
-      const labels = ["January", "February", "March", "April", "May", "June", "July"]
+      const labels = userData.map(d => d.shippingAddress)
       
       const data = {
         labels,
         datasets: [
           {
-            label: "Dataset 1",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-            backgroundColor: "rgba(255, 99, 132, 0.5)"
-          },
-          {
-            label: "Dataset 2",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-            backgroundColor: "rgba(53, 162, 235, 0.5)"
+            label: "Number of Buyers",
+            data: userData.map(d => d._count.shippingAddress),
+            backgroundColor: "rgba(0, 0, 0, 0.6)"
           }
         ]
       }

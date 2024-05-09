@@ -2,10 +2,9 @@
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import ItemsRepo from "@/app/repo/ItemsRepo";
+import * as ItemsRepo from "@/app/repo/ItemsRepo";
 import React, { useState, useEffect } from 'react';
 import { Metrophobic } from 'next/font/google';
-
 
 export default function PieApp() {
 

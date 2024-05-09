@@ -23,33 +23,11 @@ export async function getTotalUsers() {
 
 // Q1 : it get buyers per location (It work)
 export async function getBuyersPerLocation() {
-  const userData = await prisma.user.findMany({
-    select: {
-      shippingAddress: true,
-      itemSaleHistoryAsBuyer: {
-        select: {
-          boughtByUsername: true,
-        },
-      },
-    },
+
+  const result = await prisma.user.groupBy({
+    by: ["shippingAddress"],
+    _count: { shippingAddress: true }
   });
-
-  const result = userData.reduce((acc, curr) => {
-    const location = curr.shippingAddress;
-    const buyers = new Set(
-      curr.itemSaleHistoryAsBuyer.map(
-        ({ boughtByUsername }) => boughtByUsername
-      )
-    );
-
-    if (!acc[location]) {
-      acc[location] = { numBuyers: 0, location };
-    }
-
-    acc[location].numBuyers = buyers.size;
-
-    return acc;
-  }, {});
 
   return result;
 }

@@ -33,7 +33,7 @@ class fakerSeed {
                 "password": index,
                 "name": faker.person.firstName(),
                 "surname": faker.person.lastName(),
-                "shippingAddress": faker.location.country()
+                "shippingAddress": faker.helpers.arrayElement(['Doha', 'Wakra', 'Al-Rayyan', 'Al-Khor', 'Al-Shamal'])
             }
 
             const item = {

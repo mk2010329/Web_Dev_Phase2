@@ -1,5 +1,5 @@
 
-import ItemsRepo from "@/app/repo/ItemsRepo";
+
 // import { Pie } from 'react-chartjs-2';
 import React from 'react';
 import PieApp from "./PieApp"
@@ -9,10 +9,23 @@ import LineApp from "./LineApp"
 import styles from "@/app/page.module.css"
 
 export default async function Home() {
+    var response;
 
-    // getting all users
-     const response = await fetch('http://localhost:3000/api/items')
-     const items = await response.json()
+    // getting number of total users
+     response = await fetch('http://localhost:3000/api/stats/getTotalUsers')
+     const numTotalUsers = await response.json()
+
+     // getting number of total items
+     response = await fetch('http://localhost:3000/api/stats/getTotalItems')
+     const numTotalItems = await response.json()
+
+     // getting number of total transactions
+     response = await fetch('http://localhost:3000/api/stats/totalSalesCount')
+     const numTotalTransacs = await response.json()
+
+     // getting Buyers Per Location 
+     response = await fetch('http://localhost:3000/api/stats/getBuyersPerLocation')
+     const buyersPerLocation = await response.json()
      
     return(
     <main className={styles.main}>
@@ -29,7 +42,7 @@ export default async function Home() {
               priority
             />
           <h2>Total Users</h2>
-          <h1><CountApp count={67}/></h1>
+          <h1><CountApp count={numTotalUsers}/></h1>
         </div>
         <div className={styles.card}>
             <img
@@ -40,7 +53,7 @@ export default async function Home() {
               priority
             />
           <h2>Total Items</h2>
-          <h1><CountApp count={123}/></h1>
+          <h1><CountApp count={numTotalItems}/></h1>
         </div>
         <div className={styles.card}>
             <img
@@ -51,14 +64,14 @@ export default async function Home() {
               priority
             />
           <h2>Total Transactions</h2>
-          <h1><CountApp count={456}/></h1>
+          <h1><CountApp count={numTotalTransacs}/></h1>
         </div>
       </div>
       
       <h1 style={{padding: "2em"}}>Stats in Detail:</h1>
 
       {/* Pie chart for distribution of item quantities */}
-      <h2>Quantity of Items Relative to each other:</h2>
+      {/* <h2>Quantity of Items Relative to each other:</h2>
       <div style={{padding: "2em"}} className={styles.gridGlance}>
         <div>
           {items.map((item) => (
@@ -71,19 +84,19 @@ export default async function Home() {
         <div className={styles.centerChart}>
           <PieApp />
         </div>
-      </div>
+      </div> */}
       
       {/* bar chart  */}
-      <h2>Items Most Bought Over the Last Six Months:</h2>
+      <h2>Total Buyers Per Location:</h2>
       <div>
-        <BarApp />
+        <BarApp userData={buyersPerLocation}/>
       </div>
 
       {/* Line chart */}
-      <h2>Items Most Bought Over the Last Six Months:</h2>
+      {/* <h2>Items Most Bought Over the Last Six Months:</h2>
       <div>
         <LineApp />
-      </div>
+      </div> */}
    
 
     </main>);
