@@ -13,77 +13,59 @@ const searchBar = document.querySelector("#searchBar")
 
 let itemList = []
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const url = '/api/phase_1/items'
+  const response = await fetch(url)
+  const data = await response.json();
+  itemList= data
+  localStorage.itemList = JSON.stringify(itemList)
+});
+
 computer.addEventListener('click', showComp)
 mobile.addEventListener('click', showMobile)
 acc.addEventListener('click', showAcc)
 goBtn.addEventListener('click', searchItems)
 
 async function showComp() {
-  slider.style.display = 'none'
-  categories.style.display = 'none'
-  hr.style.display = 'none'
+  hide()
+  itemList = JSON.parse(localStorage.itemList)
   let computer = ""
-  itemList = localStorage.itemList
-  if (itemList) {
-    itemList = JSON.parse(localStorage.itemList)
-  }
-  else {
-    const data = await fetch('app/data/items.json')
-    itemList = await data.json()
-
-  }
   computer = itemList.filter(p => p.category == "laptop")
-  localStorage.itemList = JSON.stringify(itemList)
+  console.log(computer);
   items.innerHTML = computer.map(item => getItems(item)).join("");
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
+  scrollToTop()
 }
 
 async function showMobile() {
-  slider.style.display = 'none'
-  categories.style.display = 'none'
-  hr.style.display = 'none'
+  hide()
   let mobile = ""
-  itemList = localStorage.itemList
-  if (itemList) {
-    itemList = JSON.parse(localStorage.itemList)
-  }
-  else {
-    const data = await fetch('app/data/items.json')
-    itemList = await data.json()
-  }
+  itemList = JSON.parse(localStorage.itemList)
   mobile = itemList.filter(p => p.category == "mobile")
-  localStorage.itemList = JSON.stringify(itemList)
   items.innerHTML = mobile.map(item => getItems(item)).join("");
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
+  scrollToTop()
 }
 
 async function showAcc() {
-  slider.style.display = 'none'
-  categories.style.display = 'none'
-  hr.style.display = 'none'
+  hide()
   let acc = ""
-  itemList = localStorage.itemList
-  if (itemList) {
-    itemList = JSON.parse(localStorage.itemList)
-  }
-  else {
-    const data = await fetch('app/data/items.json')
-    itemList = await data.json()
-  }
+  itemList = JSON.parse(localStorage.itemList)
   acc = itemList.filter(p => p.category == "accessories")
   items.innerHTML = acc.map(item => getItems(item)).join("");
   localStorage.itemList = JSON.stringify(itemList)
+  scrollToTop()
+}
+
+async function hide(){
+  slider.style.display = 'none'
+  categories.style.display = 'none'
+  hr.style.display = 'none'
+}
+
+async function scrollToTop(){
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
-
 }
 
 async function addToCart(id) {
@@ -99,8 +81,9 @@ async function addToCart(id) {
     window.alert(item.name + " is added to your cart!");
 
   } else {
-    const data = await fetch('app/data/users.json')
-    users = await data.json()
+    //const url = 'app/api/phase_1/items'
+    // const data = await fetch('/app/phase_1_data/users.json')
+    // users = await data.json()
     window.alert("Please log in to continue")
     window.location.href = "../login.html";
   }
@@ -135,8 +118,9 @@ async function searchItems() {
     itemList = JSON.parse(localStorage.itemList)
   }
   else {
-    const data = await fetch('app/data/items.json')
-    itemList = await data.json()
+    const url = 'app/api/phase_1/items'
+    const data = await fetch(url)
+    itemList =  data
 
   }
   localStorage.itemList = JSON.stringify(itemList)

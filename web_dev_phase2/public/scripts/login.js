@@ -1,4 +1,4 @@
-import { findUser} from "../../phase1_repo/UsersRepo.js";
+import { findUser} from "../../app/phase_1_repo/UsersRepo.js";
 const form = document.querySelector("#login-form");//select the form attribute.
 
 form.addEventListener('submit',handleSubmission);

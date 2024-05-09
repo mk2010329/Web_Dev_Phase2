@@ -3,10 +3,10 @@ const confirmation = document.querySelector(".button_submit")
 
 let loggedInUser=""
 document.addEventListener('DOMContentLoaded', () => {
-     loggedInUser = JSON.parse(localStorage.loggedInUser)
-       document.getElementById('firstName').value=loggedInUser.name;
-    document.getElementById('lastName').value=loggedInUser.surname;
-     document.getElementById('address').value=loggedInUser.shippingAddress;
+   loggedInUser = JSON.parse(localStorage.loggedInUser)
+   document.getElementById('firstName').value=loggedInUser.name;
+   document.getElementById('lastName').value=loggedInUser.surname;
+   document.getElementById('address').value=loggedInUser.shippingAddress;
 })
 
 

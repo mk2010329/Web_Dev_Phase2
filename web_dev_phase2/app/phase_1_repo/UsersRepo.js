@@ -1,7 +1,26 @@
+import fs from 'fs-extra'
+import { nanoid } from 'nanoid'
+import path from 'path'
+
 var usersList = [];
 var loggedInUser = {};
 
+
+class UsersRepo{
+  constructor() {
+    this.filePath = path.join(process.cwd(), '/app/phase_1_data/users.json')
+}
+ async getUsers(){
+  const data = await fs.readJSON(this.filePath)
+  return data
+ }
+
+}
+
+export default new ItemRepo();
+
 async function loadUsers() {
+  console.log("hello");
   let users = localStorage.users;
   let userDataResponse = "";
   if (users) {
@@ -10,12 +29,11 @@ async function loadUsers() {
     userDataResponse = await fetch("/app/data/users.json");
     users = await userDataResponse.json();
   }
-
   return users;
 }
 
 export async function findUser(username, password) {
-  usersList = await loadUsers();
+  usersList = await ItemRepo.getUsers();
   localStorage.users = JSON.stringify(usersList);
   let list = localStorage.users;
   const foundUser = usersList.find(

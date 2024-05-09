@@ -1,5 +1,5 @@
-import * as itemsRepo from "../../phase1_repo/ItemsRepo.js"
-import * as UsersRepo from "../../phase1_repo/UsersRepo.js"
+import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
+import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
 
 const loggedInUser = await UsersRepo.getLoggedInUser()
 
