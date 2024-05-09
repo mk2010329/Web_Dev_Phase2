@@ -141,38 +141,38 @@ export async function getAverageItemPrice() {
 }
 
 // Q6 : it get purchases per month (It work ) but some logic error
-// export async function getPurchasesPerMonth() {
-//   const purchaseData = await prisma.itemSaleHistory.findMany({
-//     select: {
-//       item: {
-//         select: {
-//           itemName: true,
-//           price: true,
-//         },
-//       },
-//       dateOfPurchase: true,
-//     },
-//     orderBy: {
-//       dateOfPurchase: "desc",
-//     },
-//   });
+export async function getPurchasesPerMonth() {
+  const purchaseData = await prisma.itemSaleHistory.findMany({
+    select: {
+      item: {
+        select: {
+          itemName: true,
+          price: true,
+        },
+      },
+      dateOfPurchase: true,
+    },
+    orderBy: {
+      dateOfPurchase: "desc",
+    },
+  });
 
-//   const result = purchaseData.reduce((acc, curr) => {
-//     const month = curr.dateOfPurchase.getMonth() + 1; // Months are zero-indexed
-//     const year = curr.dateOfPurchase.getFullYear();
-//     const itemName = curr.item.itemName;
-//     const price = curr.item.price;
+  const result = purchaseData.reduce((acc, curr) => {
+    const month = curr.dateOfPurchase.getMonth() + 1; // Months are zero-indexed
+    const year = curr.dateOfPurchase.getFullYear();
+    const itemName = curr.item.itemName;
+    const price = curr.item.price;
 
-//     const monthYear = `${month}/${year}`; // Combine month and year into a single key
+    const monthYear = `${month}/${year}`; // Combine month and year into a single key
 
-//     if (!acc[monthYear]) {
-//       acc[monthYear] = { totalAmount: 0 };
-//     }
+    if (!acc[monthYear]) {
+      acc[monthYear] = { totalAmount: 0 };
+    }
 
-//     acc[monthYear].totalAmount += price;
+    acc[monthYear].totalAmount += price;
 
-//     return acc;
-//   }, {});
+    return acc;
+  }, {});
 
-//   return result;
-// }
+  return result;
+}
