@@ -2,6 +2,19 @@ import UsersRepo from "@/app/phase_1_repo/UsersRepo";
 
 export async function GET(request){
 
-        const Items = await UsersRepo.getUsers();
-        return Response.json(Items,{status:200});
+    const { searchParams } = new URL(request.url)
+    let User = ''
+
+    if(searchParams.get('user') && searchParams.get('pass')){
+        const user = searchParams.get('user')
+        const pass = searchParams.get('pass')
+        User = await UsersRepo.findUser(user,pass);
+    }
+    else{
+        User = await UsersRepo.getUsers();
+    }
+
+  
+    
+    return Response.json(User,{status:200});
 }

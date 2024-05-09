@@ -1,4 +1,4 @@
-import { findUser} from "../../app/phase_1_repo/UsersRepo.js";
+// import UsersRepo from "/app/phase_1_repo/UsersRepo.js";
 const form = document.querySelector("#login-form");//select the form attribute.
 
 form.addEventListener('submit',handleSubmission);
@@ -7,10 +7,14 @@ async function handleSubmission(e) {
     const formdata = new FormData(e.target);
     const loginOBJ = {};
     for(const [key,value] of formdata){
-        loginOBJ[key] = value; //form the login obj.
+        loginOBJ[key] = value; //form the login obj.]
     }
-    console.log(loginOBJ);
-    let user = await findUser(loginOBJ.user,loginOBJ.pass)
+    // console.log(loginOBJ);
+    //let user = await UsersRepo.findUser(loginOBJ.user,loginOBJ.pass)
+    const url = `/api/phase_1/users?user=${loginOBJ.user}&pass=${loginOBJ.pass}`
+    const response = await fetch(url)
+    const user = await response.json();
+
     if(user){
     localStorage.loggedInUser = JSON.stringify(user)
     window.location.href = "../home_page.html";

@@ -1,11 +1,12 @@
-import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
-import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
+// import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
+// import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
 
-const loggedInUser = await UsersRepo.getLoggedInUser()
+// const loggedInUser = await UsersRepo.getLoggedInUser()
 
+const loggedInUser = JSON.parse(localStorage.loggedInUser)
 
 document.getElementById("currently-selling-items").style.display = "block";
-displayCurrentUsersItems()
+// displayCurrentUsersItems()
 
 document.getElementById("current-items-button").addEventListener("click", displayCurrentUsersItems)
 document.getElementById("purchase-history-button").addEventListener("click", displayPurchaseHistory)

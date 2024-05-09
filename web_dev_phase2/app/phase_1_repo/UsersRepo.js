@@ -15,27 +15,12 @@ class UsersRepo{
   return data
  }
 
-}
-
-export default new ItemRepo();
-
-async function loadUsers() {
+  async  findUser(username, password) {
   console.log("hello");
-  let users = localStorage.users;
-  let userDataResponse = "";
-  if (users) {
-    users = JSON.parse(localStorage.users);
-  } else {
-    userDataResponse = await fetch("/app/data/users.json");
-    users = await userDataResponse.json();
-  }
-  return users;
-}
-
-export async function findUser(username, password) {
-  usersList = await ItemRepo.getUsers();
-  localStorage.users = JSON.stringify(usersList);
-  let list = localStorage.users;
+  const data = await fs.readJSON(this.filePath)
+  usersList =  data
+  // localStorage.users = JSON.stringify(usersList);
+  // let list = localStorage.users;
   const foundUser = usersList.find(
     (user) => user.username == username && user.password == password
   );
@@ -46,6 +31,22 @@ export async function findUser(username, password) {
     loggedInUser = foundUser;
     return loggedInUser;
   }
+}
+
+}
+
+export default new UsersRepo();
+
+async function loadUsers() {
+  let users = localStorage.users;
+  let userDataResponse = "";
+  if (users) {
+    users = JSON.parse(localStorage.users);
+  } else {
+    userDataResponse = await fetch("/app/data/users.json");
+    users = await userDataResponse.json();
+  }
+  return users;
 }
 
 export async function getLoggedInUser() {
