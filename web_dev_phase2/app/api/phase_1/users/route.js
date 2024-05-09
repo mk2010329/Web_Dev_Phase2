@@ -15,3 +15,9 @@ export async function GET(request){
     }
     return Response.json(User,{status:200});
 }
+
+export async function POST(request){
+    const user = await request.json();
+    const newUser = await UsersRepo.rewriteUser(user)
+    return Response.json(newUser,{status:200})
+}

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 confirmation.addEventListener('click',orderNow)
 
-function orderNow(){
+async function orderNow(){
     let extractedCart = loggedInUser.cart
     let sellers = []
     //adding the items to list of purchased items
@@ -52,4 +52,15 @@ function orderNow(){
    localStorage.users = JSON.stringify(users)
    window.alert("Transaction successful")
    window.location.href = "../seller_portfolio/index.html";
+   const retrievedData = localStorage.users;
+   
+   const url = '/app/api/phase_1/users'
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(retrievedData)
+
+            })
 }
