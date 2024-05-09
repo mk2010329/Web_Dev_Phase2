@@ -35,6 +35,11 @@ class UsersRepo{
   //   console.log(foundUser);
   //   loggedInUser = foundUser;
  }
+
+ async rewriteUser(user){
+  await fs.writeJSON(this.filePath, user)
+  return 'ok'
+ }
 }
 
 export default new UsersRepo();

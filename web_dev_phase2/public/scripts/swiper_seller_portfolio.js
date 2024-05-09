@@ -29,15 +29,15 @@ function currentItemCardTemplate(item) {
         </article>`;
 }
     
-function soldItemCardTemplate({name, selectedQuantity, category, picture}) {
-        const item = itemsRepo.searchItem(111)
+function soldItemCardTemplate({name, selectedQuantity, category, picture,boughtByUser,price}) {
+        
         return `<article class="card">
                 <img src="${picture}" alt="Item"><br>
                 <p><b>Name: </b>${name}</p><br>
                 <p><b>Quantity: </b>${selectedQuantity}</p> <br>
                 <p><b>category: </b>${category}</p><br>
-                <p><b>Bought by User: </b>${item.boughtByUser}</p><br>
-                <p><b>Selling Price: </b>${item.price} QAR</p><br>
+                <p><b>Bought by User: </b>${boughtByUser}</p><br>
+                <p><b>Selling Price: </b>${price} QAR</p><br>
         </article>`;
 }
 
