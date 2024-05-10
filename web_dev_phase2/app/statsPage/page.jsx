@@ -18,6 +18,9 @@ export default function Home() {
   const [purchasesPproductPyear, setPurchasesPproductPyear] = useState("")
   const [top3ProductsLast6Months, setTop3ProductsLast6Months] = useState("")
   const [purchasesPerMonth, setPurchasesPerMonth] = useState("")
+  const [sellerUsers, setSellerUsers] = useState("")
+  const [buyerUsers, setBuyerUsers] = useState("")
+  const [itemsCount, setItemsCount] = useState("")
 
   
   useEffect(() => {
@@ -30,49 +33,69 @@ export default function Home() {
       })
   
 
-  // getting number of total items
-  fetch("http://localhost:3000/api/stats/getTotalItems")
-    .then((response) => response.json())
-      .then((data) => {
-        setNumTotalItems(data)
-      })
-  
+    // getting number of total items
+    fetch("http://localhost:3000/api/stats/getTotalItems")
+      .then((response) => response.json())
+        .then((data) => {
+          setNumTotalItems(data)
+        })
+    
 
-  // getting number of total transactions
-  fetch("http://localhost:3000/api/stats/totalSalesCount")
-    .then((response) => response.json())
-      .then((data) => {
-      setTotalTransacs(data)
-      })
-  
+    // getting number of total transactions
+    fetch("http://localhost:3000/api/stats/totalSalesCount")
+      .then((response) => response.json())
+        .then((data) => {
+        setTotalTransacs(data)
+        })
+    
 
-  // // getting Buyers Per Location
-  fetch("http://localhost:3000/api/stats/getBuyersPerLocation")
-    .then((response) => response.json())
-      .then((data) => {
-        setBuyersPerLocation(data)
-      })
+    // // getting Buyers Per Location
+    fetch("http://localhost:3000/api/stats/getBuyersPerLocation")
+      .then((response) => response.json())
+        .then((data) => {
+          setBuyersPerLocation(data)
+        })
 
-  // // Purchases Per Product Per Year
-  fetch("http://localhost:3000/api/stats/getPurchasesPerProductPerYear")
-    .then((response) => response.json())
-      .then((data) => {
-      setPurchasesPproductPyear(data)
-      })
-  
+    // // Purchases Per Product Per Year
+    fetch("http://localhost:3000/api/stats/getPurchasesPerProductPerYear")
+      .then((response) => response.json())
+        .then((data) => {
+        setPurchasesPproductPyear(data)
+        })
+    
 
-  // // top3ProductsLast6Months
-  fetch("http://localhost:3000/api/stats/top3ProductsLast6Months")
-    .then((response) => response.json())
-      .then((data) => {
-      setTop3ProductsLast6Months(data)
-      })
+    // // top3ProductsLast6Months
+    fetch("http://localhost:3000/api/stats/top3ProductsLast6Months")
+      .then((response) => response.json())
+        .then((data) => {
+        setTop3ProductsLast6Months(data)
+        })
 
-  // // Purchases Per Month
-  fetch("http://localhost:3000/api/stats/getPurchasesPerMonth")
+    // // Purchases Per Month
+    fetch("http://localhost:3000/api/stats/getPurchasesPerMonth")
+      .then((response) => response.json())
+        .then((data) => {
+          setPurchasesPerMonth(data)
+          })
+    // // getSellerUsersWithItemCount
+    fetch("http://localhost:3000/api/stats/getSellerUsersWithItemCount")
     .then((response) => response.json())
       .then((data) => {
-        setPurchasesPerMonth(data)
+        setSellerUsers(data)
+        })
+        
+    // // getBuyerUsersWithItemCount
+    fetch("http://localhost:3000/api/stats/getBuyerUsersWithItemCount")
+    .then((response) => response.json())
+      .then((data) => {
+        setBuyerUsers(data)
+        })
+
+    // // getItemsCountByType
+    fetch("http://localhost:3000/api/stats/getItemsCountByType")
+    .then((response) => response.json())
+      .then((data) => {
+        setItemsCount(data)
         })
     
   }, [])
@@ -127,22 +150,6 @@ export default function Home() {
 
       <h1 style={{ padding: "2em" }}>Stats in Detail:</h1>
 
-      {/* Pie chart for distribution of item quantities */}
-      {/* <h2>Quantity of Items Relative to each other:</h2>
-      <div style={{padding: "2em"}} className={styles.gridGlance}>
-        <div>
-          {items.map((item) => (
-            <div key={item.itemName} >
-              <h2>{item.itemName}</h2>
-              <p>Quantity : {item.quantity}</p>
-            </div>
-          ))}
-        </div>
-        <div className={styles.centerChart}>
-          <PieApp />
-        </div>
-      </div> */}
-
       {/* bar chart  */}
       <h2>Total Buyers Per Location:</h2>
       <div>
@@ -179,6 +186,25 @@ export default function Home() {
             .map(month => purchasesPerMonth[month]["totalAmount"])}
         />
       </div>
+
+      {/* Pie chart for distribution of item quantities */}
+      <h2>Number Of Buyers and Sellers Relative to Each Other:</h2>
+      <div className={styles.centerChart}>
+        <PieApp
+          theLabels={["Sellers", "Buyers"]}
+          theData={[sellerUsers.length, buyerUsers.length]}
+        />
+      </div>
+      <br />
+      <br />
+      <h2>Quantity of Items Being Sold Relative to Each Other:</h2>
+      <div className={styles.centerChart}>
+        <PieApp
+          theLabels={itemsCount && itemsCount.map(item => item["itemName"])}
+          theData={itemsCount && itemsCount.map(item => item["_count"]["itemName"])}
+        />
+      </div>
+      
     </main>
   );
 }

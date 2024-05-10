@@ -43,7 +43,7 @@ export default function BarApp( {theLabels, theData} ) {
           {
             label: "Number of Buyers",
             data: theData,
-            backgroundColor: "rgba(0, 0, 0, 0.6)"
+            backgroundColor: "rgba(400, 23, 45, 0.6)"
           }
         ]
       }

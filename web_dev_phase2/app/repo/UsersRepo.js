@@ -52,35 +52,41 @@ export async function getMostSellingUsers() {
 // Get users who sell only
 export async function getSellerUsersWithItemCount() {
   try {
-    const sellerUsers = await prisma.user.findMany({
-      where: {
-        itemSaleHistoryAsSeller: {
-          some: {},
-        },
-      },
-      select: {
-        username: true,
-        name: true,
-        surname: true,
-        itemSaleHistoryAsSeller: {
-          select: {
-            itemId: true,
-          },
-        },
-      },
+    // const sellerUsers = await prisma.user.findMany({
+    //   where: {
+    //     itemSaleHistoryAsSeller: {
+    //       some: {},
+    //     },
+    //   },
+    //   select: {
+    //     username: true,
+    //     name: true,
+    //     surname: true,
+    //     itemSaleHistoryAsSeller: {
+    //       select: {
+    //         itemId: true,
+    //       },
+    //     },
+    //   },
+
+    const sellerUsers = await prisma.currentlySellingItem.groupBy({
+      by: ["username"],
+      _count: { username: true }
     });
 
-    const sellerUsersWithItemCount = sellerUsers.map((user) => {
-      const itemCount = user.itemSaleHistoryAsSeller.length;
-      return {
-        username: user.username,
-        name: user.name,
-        surname: user.surname,
-        itemCount: itemCount,
-      };
-    });
+    
 
-    return sellerUsersWithItemCount;
+    // const sellerUsersWithItemCount = sellerUsers.map((user) => {
+    //   const itemCount = user.itemSaleHistoryAsSeller.length;
+    //   return {
+    //     username: user.username,
+    //     name: user.name,
+    //     surname: user.surname,
+    //     itemCount: itemCount,
+    //   };
+    // });
+
+    return sellerUsers;
   } catch (error) {
     throw new Error(`Unable to fetch seller users with item count: ${error}`);
   }
@@ -89,32 +95,37 @@ export async function getSellerUsersWithItemCount() {
 // Get users who buy only
 export async function getBuyerUsersWithItemCount() {
   try {
-    const buyerUsers = await prisma.user.findMany({
-      where: {
-        itemSaleHistoryAsBuyer: {
-          some: {},
-        },
-      },
-      select: {
-        username: true,
-        name: true,
-        surname: true,
-        itemSaleHistoryAsBuyer: {
-          select: {
-            itemId: true,
-          },
-        },
-      },
-    });
+    // const buyerUsers = await prisma.user.findMany({
+    //   where: {
+    //     itemSaleHistoryAsBuyer: {
+    //       some: {},
+    //     },
+    //   },
+    //   select: {
+    //     username: true,
+    //     name: true,
+    //     surname: true,
+    //     itemSaleHistoryAsBuyer: {
+    //       select: {
+    //         itemId: true,
+    //       },
+    //     },
+    //   },
+    // });
 
-    const buyerUsersWithItemCount = buyerUsers.map((user) => {
-      const itemCount = user.itemSaleHistoryAsBuyer.length;
-      return {
-        username: user.username,
-        name: user.name,
-        surname: user.surname,
-        itemCount: itemCount,
-      };
+    // const buyerUsersWithItemCount = buyerUsers.map((user) => {
+    //   const itemCount = user.itemSaleHistoryAsBuyer.length;
+    //   return {
+    //     username: user.username,
+    //     name: user.name,
+    //     surname: user.surname,
+    //     itemCount: itemCount,
+    //   };
+    // });
+
+    const buyerUsersWithItemCount = await prisma.itemSaleHistory.groupBy({
+      by: ["boughtByUsername"],
+      _count: { boughtByUsername: true }
     });
 
     return buyerUsersWithItemCount;

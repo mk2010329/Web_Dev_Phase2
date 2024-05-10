@@ -6,7 +6,10 @@ const prisma = new PrismaClient();
 //Done (it work)
 export async function getAllItems() {
   try {
-    const items = await prisma.item.findMany();
+    const items = await prisma.item.groupBy({
+      by: ["itemName"],
+      _count: { itemName: true }
+    });
     return items;
   } catch (error) {
     throw new Error(`Unable to fetch items: ${error}`);

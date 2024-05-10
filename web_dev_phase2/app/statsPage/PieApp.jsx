@@ -4,16 +4,16 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import React from 'react';
 
-export default function PieApp() {
+export default function PieApp( {theLabels, theData} ) {
 
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   const data = {
-    labels: items.map(i => i.itemName),
+    labels: theLabels,
     datasets: [
       {
         label: 'Quantity of Items',
-        data: items.map(i => i.quantity),
+        data: theData,
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
