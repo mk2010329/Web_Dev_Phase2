@@ -17,6 +17,7 @@ export default function Home() {
   const [buyersPerLocation, setBuyersPerLocation] = useState("")
   const [purchasesPproductPyear, setPurchasesPproductPyear] = useState("")
   const [top3ProductsLast6Months, setTop3ProductsLast6Months] = useState("")
+  const [purchasesPerMonth, setPurchasesPerMonth] = useState("")
 
   
   useEffect(() => {
@@ -66,6 +67,13 @@ export default function Home() {
       .then((data) => {
       setTop3ProductsLast6Months(data)
       })
+
+  // // Purchases Per Month
+  fetch("http://localhost:3000/api/stats/getPurchasesPerMonth")
+    .then((response) => response.json())
+      .then((data) => {
+        setPurchasesPerMonth(data)
+        })
     
   }, [])
 
@@ -163,10 +171,14 @@ export default function Home() {
       </div>
 
       {/* Line chart */}
-      {/* <h2>Items Most Bought Over the Last Six Months:</h2>
+      <h2>Number of Purchases Per Month:</h2>
       <div>
-        <LineApp />
-      </div> */}
+        <LineApp 
+          theLabels={Object.keys(purchasesPerMonth)}
+          theData={Object.keys(purchasesPerMonth)
+            .map(month => purchasesPerMonth[month]["totalAmount"])}
+        />
+      </div>
     </main>
   );
 }
