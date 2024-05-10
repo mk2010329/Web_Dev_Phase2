@@ -2,29 +2,11 @@
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import * as ItemsRepo from "@/app/repo/ItemsRepo";
-import React, { useState, useEffect } from 'react';
-import { Metrophobic } from 'next/font/google';
+import React from 'react';
 
 export default function PieApp() {
 
   ChartJS.register(ArcElement, Tooltip, Legend);
-
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await fetch('/api/items')
-        const data = await response.json();
-        setItems(data);
-      } catch (error) {
-        console.error('Error fetching items:', error);
-      }
-    };
-
-    fetchItems();
-  }, []);
 
   const data = {
     labels: items.map(i => i.itemName),

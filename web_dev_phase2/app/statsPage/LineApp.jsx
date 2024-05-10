@@ -35,7 +35,6 @@ export default function LineApp() {
         },
         title: {
         display: true,
-        text: "Chart.js Line Chart"
         }
     }
     }

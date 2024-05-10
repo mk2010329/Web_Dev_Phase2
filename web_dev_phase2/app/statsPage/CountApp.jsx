@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import CountUp from 'react-countup';
 
 export default function CountApp( {count} ) {

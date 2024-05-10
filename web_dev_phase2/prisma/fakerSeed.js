@@ -38,7 +38,7 @@ class fakerSeed {
 
             const item = {
                 "itemId": index,
-                "itemName": faker.helpers.arrayElement(['Laptop', 'Phone']),
+                "itemName": faker.helpers.arrayElement(['Laptop', 'Phone', 'Headphones', 'Desktop']),
                 "price": parseFloat(faker.commerce.price({ min: 100, max: 2000 })),
                 "quantity": 10,
                 "selectedQuantity": null,
@@ -78,7 +78,7 @@ class fakerSeed {
                 "soldByUsername": index + 1,
                 "boughtByUsername": index + 2,
                 "itemId": index,
-                "dateOfPurchase": faker.date.recent()
+                "dateOfPurchase": faker.date.between({ from: '2019-01-01T00:00:00.000Z', to: '2025-01-01T00:00:00.000Z' })
             }
             itemSaleHistoryList.push(itemhistory)
         }
