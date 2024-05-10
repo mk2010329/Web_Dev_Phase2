@@ -50,17 +50,18 @@ async function orderNow(){
    //saving the data
    localStorage.loggedInUser = JSON.stringify(loggedInUser)
    localStorage.users = JSON.stringify(users)
-   window.alert("Transaction successful")
-   window.location.href = "../seller_portfolio/index.html";
    const retrievedData = localStorage.users;
-   
-   const url = '/app/api/phase_1/users'
-            const response = await fetch(url, {
+   const parsedData = JSON.parse(retrievedData);
+   const url = 'http://localhost:3000/api/phase_1/users'
+   const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(retrievedData)
+                body: JSON.stringify(parsedData)
 
             })
+   window.alert("Transaction successful")
+   window.location.href = "../seller_portfolio/index.html";
+
 }

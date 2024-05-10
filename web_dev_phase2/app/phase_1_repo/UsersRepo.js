@@ -17,9 +17,6 @@ class UsersRepo{
 
  async findUser(username,password){
   usersList = await fs.readJSON(this.filePath)
-  //console.log(JSON.stringify(usersList))
-  //localStorage.users = JSON.stringify(usersList);
-  // let list = localStorage.users;
    const foundUser = usersList.find(
      (user) => user.username == username && user.password == password
    );
@@ -29,11 +26,6 @@ class UsersRepo{
    }else{
     return foundUser;
    }
-  // if (foundUser === undefined) {
-  //   return undefined;
-  // } else {
-  //   console.log(foundUser);
-  //   loggedInUser = foundUser;
  }
 
  async rewriteUser(user){
@@ -43,24 +35,6 @@ class UsersRepo{
 }
 
 export default new UsersRepo();
-
-export async function findUser(username, password) {
-  return 'hi'
-  // usersList = await fs.readJSON('./../data/users.json')
-  // localStorage.users = JSON.stringify(usersList);
-  // let list = localStorage.users;
-  // const foundUser = usersList.find(
-  //   (user) => user.username == username && user.password == password
-  // );
-  // if (foundUser === undefined) {
-  //   return undefined;
-  // } else {
-  //   console.log(foundUser);
-  //   loggedInUser = foundUser;
-  //   return loggedInUser;
-  // }
-}
-
 
 async function loadUsers() {
   let users = localStorage.users;

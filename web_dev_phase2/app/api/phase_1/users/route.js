@@ -18,6 +18,7 @@ export async function GET(request){
 
 export async function POST(request){
     const user = await request.json();
+    console.log(user);
     const newUser = await UsersRepo.rewriteUser(user)
     return Response.json(newUser,{status:200})
 }
