@@ -1,13 +1,14 @@
 // import * as itemsRepo from "../../app/phase_1_repo/ItemsRepo.js"
 // import * as UsersRepo from "../../app/phase_1_repo/UsersRepo.js"
 
-//const loggedInUser = await UsersRepo.getLoggedInUser()
 const loggedInUser = await localStorage.loggedInUser
-console.log(loggedInUser.name)
 const loggedUserObj = JSON.parse(loggedInUser)
-console.log(loggedUserObj.name)
+
+const allitems = await localStorage.itemList
+const items = JSON.parse(allitems) 
+
 document.getElementById("currently-selling-items").style.display = "block";
-// displayCurrentUsersItems()
+displayCurrentUsersItems()
 
 document.getElementById("current-items-button").addEventListener("click", displayCurrentUsersItems)
 document.getElementById("purchase-history-button").addEventListener("click", displayPurchaseHistory)
@@ -29,7 +30,7 @@ function currentItemCardTemplate(item) {
         </article>`;
 }
     
-function soldItemCardTemplate({name, selectedQuantity, category, picture,boughtByUser,price}) {
+function soldItemCardTemplate({name, selectedQuantity, category, picture,boughtByUser="Ali",price}) {
         
         return `<article class="card">
                 <img src="${picture}" alt="Item"><br>
@@ -55,8 +56,8 @@ function displayCurrentUsersItems() {
         document.querySelectorAll(".popup-btn").forEach(c => c.addEventListener("click", (event) => {
                 const itemId = event.target.parentElement.querySelector("*").id
                 
-                const item = itemsRepo.searchItem(itemId)
-
+                const item =  searchItem(itemId)
+                
                 const dialog = document.getElementById("item-popup-dialog");
                 document.getElementById("dialog-content").innerHTML = 
                         `<h1 style="color:grey">Update Quantity for: <p style="color:black">${item.name}</p></h1>`
@@ -79,7 +80,7 @@ function displayCurrentUsersItems() {
                         item.price = formData.get("price")
                         item.quantity = formData.get("quantity")
                         
-                        itemsRepo.updateItem(item)
+                        updateItem(item)
                         window.location.reload()
                 })
         }))
@@ -118,4 +119,15 @@ async function displayUsersSaleHistory() {
 
 }
 
+ function updateItem(item) {
+        items.splice(items.findIndex(i => i.id == item.id), 1, item)
+        localStorage.itemList = JSON.stringify(items)
+        loggedUserObj.listOfCurrentItems
+            .splice(loggedInUser.listOfCurrentItems.findIndex(i => i.id == item.id), 1, item)
+        localStorage.loggedInUser = JSON.stringify(loggedInUser)
+    }
+
+ function searchItem(id) {
+        return  items.find(i => i.id == id)
+    }
 
