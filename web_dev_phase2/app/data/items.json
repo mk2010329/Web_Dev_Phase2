@@ -1,38 +1,4502 @@
 [
   {
-    "itemId": 789,
-    "itemName": "Smartphone",
-    "price": 599,
+    "itemId": 1,
+    "itemName": "Desktop",
+    "price": 1913,
     "quantity": 10,
     "selectedQuantity": null,
-    "pictureUrl": "https://example.com/smartphone.jpg",
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2012380942827520",
     "category": "Electronics"
   },
   {
-    "itemId": 101112,
+    "itemId": 2,
+    "itemName": "Phone",
+    "price": 364,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=364197946851328",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 3,
+    "itemName": "Phone",
+    "price": 1483,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/CLuowTg8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 4,
+    "itemName": "Laptop",
+    "price": 783,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4704025784090624",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 5,
+    "itemName": "Laptop",
+    "price": 1845,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=507453322035200",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 6,
+    "itemName": "Desktop",
+    "price": 464,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7689789029482496",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 7,
+    "itemName": "Laptop",
+    "price": 746,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3530873286688768",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 8,
     "itemName": "Headphones",
-    "price": 99,
-    "quantity": 20,
+    "price": 1030,
+    "quantity": 10,
     "selectedQuantity": null,
-    "pictureUrl": "https://example.com/headphones.jpg",
+    "pictureUrl": "https://picsum.photos/seed/bLFE0LAwT/640/480",
     "category": "Electronics"
   },
   {
-    "itemId": 131415,
-    "itemName": "Book",
-    "price": 15,
-    "quantity": 50,
+    "itemId": 9,
+    "itemName": "Desktop",
+    "price": 911,
+    "quantity": 10,
     "selectedQuantity": null,
-    "pictureUrl": "https://example.com/book.jpg",
-    "category": "Books"
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2189175570825216",
+    "category": "Electronics"
   },
   {
-    "itemId": 161718,
-    "itemName": "T-shirt",
-    "price": 25,
-    "quantity": 30,
+    "itemId": 10,
+    "itemName": "Headphones",
+    "price": 1423,
+    "quantity": 10,
     "selectedQuantity": null,
-    "pictureUrl": "https://example.com/tshirt.jpg",
-    "category": "Clothing"
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4570171880505344",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 11,
+    "itemName": "Laptop",
+    "price": 560,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4041464810045440",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 12,
+    "itemName": "Headphones",
+    "price": 912,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5529655155097600",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 13,
+    "itemName": "Headphones",
+    "price": 489,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/oUggtDi8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 14,
+    "itemName": "Phone",
+    "price": 1421,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/53eodSxuhA/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 15,
+    "itemName": "Headphones",
+    "price": 1005,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/3KROnyhT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 16,
+    "itemName": "Desktop",
+    "price": 1030,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/uJXzhSJKMW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 17,
+    "itemName": "Headphones",
+    "price": 298,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ISNtAFLvd/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 18,
+    "itemName": "Headphones",
+    "price": 531,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/RusMU/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 19,
+    "itemName": "Desktop",
+    "price": 1045,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2911651678388224",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 20,
+    "itemName": "Laptop",
+    "price": 1134,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/7uTt90/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 21,
+    "itemName": "Laptop",
+    "price": 139,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mfmDj9aQ0/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 22,
+    "itemName": "Headphones",
+    "price": 905,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/SM22Igr3/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 23,
+    "itemName": "Phone",
+    "price": 1154,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/UBKae/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 24,
+    "itemName": "Headphones",
+    "price": 636,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6822861993934848",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 25,
+    "itemName": "Headphones",
+    "price": 103,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3057509810044928",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 26,
+    "itemName": "Headphones",
+    "price": 954,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6785746136465408",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 27,
+    "itemName": "Laptop",
+    "price": 170,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1240208695623680",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 28,
+    "itemName": "Desktop",
+    "price": 1180,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/hDa5pu/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 29,
+    "itemName": "Laptop",
+    "price": 1072,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4416665534070784",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 30,
+    "itemName": "Phone",
+    "price": 193,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2583123485261824",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 31,
+    "itemName": "Desktop",
+    "price": 1176,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=402280006287360",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 32,
+    "itemName": "Phone",
+    "price": 1808,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1304911549562880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 33,
+    "itemName": "Desktop",
+    "price": 1117,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=103803193917440",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 34,
+    "itemName": "Phone",
+    "price": 360,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0uC8bYD/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 35,
+    "itemName": "Laptop",
+    "price": 2000,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=125714072338432",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 36,
+    "itemName": "Headphones",
+    "price": 1570,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/irzMf60chz/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 37,
+    "itemName": "Phone",
+    "price": 1950,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/dFNlPkb3Z/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 38,
+    "itemName": "Laptop",
+    "price": 491,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=813333538144256",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 39,
+    "itemName": "Desktop",
+    "price": 1566,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/gWhWExV/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 40,
+    "itemName": "Desktop",
+    "price": 471,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=332010851663872",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 41,
+    "itemName": "Desktop",
+    "price": 1692,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2467134852562944",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 42,
+    "itemName": "Desktop",
+    "price": 1588,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1210884076601344",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 43,
+    "itemName": "Headphones",
+    "price": 142,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/2w3nZuQ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 44,
+    "itemName": "Desktop",
+    "price": 1023,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8965284639539200",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 45,
+    "itemName": "Phone",
+    "price": 1992,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7484080645996544",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 46,
+    "itemName": "Headphones",
+    "price": 839,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/7bcQH0xFZ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 47,
+    "itemName": "Desktop",
+    "price": 1518,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/cZrGG5yr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 48,
+    "itemName": "Laptop",
+    "price": 759,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2089923156901888",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 49,
+    "itemName": "Laptop",
+    "price": 262,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lvxJiAxy/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 50,
+    "itemName": "Headphones",
+    "price": 1617,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1230014018224128",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 51,
+    "itemName": "Headphones",
+    "price": 1302,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ZL8nkqNENl/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 52,
+    "itemName": "Phone",
+    "price": 871,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3792630347464704",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 53,
+    "itemName": "Laptop",
+    "price": 1642,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/82yuSkYc/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 54,
+    "itemName": "Phone",
+    "price": 1509,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5291900235939840",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 55,
+    "itemName": "Laptop",
+    "price": 724,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=958186838294528",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 56,
+    "itemName": "Phone",
+    "price": 1976,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8708810965254144",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 57,
+    "itemName": "Desktop",
+    "price": 742,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/k9aSta6exK/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 58,
+    "itemName": "Desktop",
+    "price": 860,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/498NIf5yI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 59,
+    "itemName": "Laptop",
+    "price": 888,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=430272048791552",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 60,
+    "itemName": "Laptop",
+    "price": 883,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/A2KgEDl/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 61,
+    "itemName": "Desktop",
+    "price": 1805,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6592292368416768",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 62,
+    "itemName": "Headphones",
+    "price": 1967,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1691248536584192",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 63,
+    "itemName": "Phone",
+    "price": 186,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1688647801765888",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 64,
+    "itemName": "Phone",
+    "price": 151,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7358246000001024",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 65,
+    "itemName": "Desktop",
+    "price": 1459,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8766062329856000",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 66,
+    "itemName": "Headphones",
+    "price": 131,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/pMuZoeI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 67,
+    "itemName": "Phone",
+    "price": 1088,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8978458843545600",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 68,
+    "itemName": "Headphones",
+    "price": 1695,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/73i8Fmd/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 69,
+    "itemName": "Laptop",
+    "price": 1807,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4385968905781248",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 70,
+    "itemName": "Phone",
+    "price": 121,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5247715296411648",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 71,
+    "itemName": "Laptop",
+    "price": 514,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2758135416619008",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 72,
+    "itemName": "Laptop",
+    "price": 1176,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/f5nJ7/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 73,
+    "itemName": "Laptop",
+    "price": 1077,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/vR7QYEK77j/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 74,
+    "itemName": "Phone",
+    "price": 989,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7115743697043456",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 75,
+    "itemName": "Laptop",
+    "price": 784,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4898389017755648",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 76,
+    "itemName": "Phone",
+    "price": 1756,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1941055891046400",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 77,
+    "itemName": "Headphones",
+    "price": 1815,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0Tw9AR/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 78,
+    "itemName": "Headphones",
+    "price": 1274,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/1NPn6cI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 79,
+    "itemName": "Laptop",
+    "price": 1456,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/KFYBdDn/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 80,
+    "itemName": "Headphones",
+    "price": 401,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1555601987469312",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 81,
+    "itemName": "Desktop",
+    "price": 1138,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=33683553648640",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 82,
+    "itemName": "Desktop",
+    "price": 1539,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VL827Pc/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 83,
+    "itemName": "Desktop",
+    "price": 1364,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/zYxD7/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 84,
+    "itemName": "Laptop",
+    "price": 1875,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Ci19H6d/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 85,
+    "itemName": "Phone",
+    "price": 1397,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7028381101064192",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 86,
+    "itemName": "Phone",
+    "price": 619,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4178140618293248",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 87,
+    "itemName": "Laptop",
+    "price": 1137,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/P7kG8k/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 88,
+    "itemName": "Laptop",
+    "price": 759,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/zd52as8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 89,
+    "itemName": "Desktop",
+    "price": 495,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/4DqFIUb/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 90,
+    "itemName": "Laptop",
+    "price": 1172,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2925640567226368",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 91,
+    "itemName": "Phone",
+    "price": 428,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3224314025345024",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 92,
+    "itemName": "Laptop",
+    "price": 964,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/qNIX7Q/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 93,
+    "itemName": "Headphones",
+    "price": 777,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/irOjy/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 94,
+    "itemName": "Desktop",
+    "price": 1943,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ld1CqCEa/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 95,
+    "itemName": "Desktop",
+    "price": 1101,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4011697754865664",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 96,
+    "itemName": "Headphones",
+    "price": 465,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/pvgm0OwOKp/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 97,
+    "itemName": "Laptop",
+    "price": 613,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4659252324990976",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 98,
+    "itemName": "Phone",
+    "price": 1688,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2570464400506880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 99,
+    "itemName": "Laptop",
+    "price": 190,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1090315909857280",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 100,
+    "itemName": "Headphones",
+    "price": 726,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3237131965169664",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 101,
+    "itemName": "Phone",
+    "price": 214,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/nH37h9Q/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 102,
+    "itemName": "Phone",
+    "price": 1861,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/JCphg/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 103,
+    "itemName": "Laptop",
+    "price": 1496,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7909481677586432",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 104,
+    "itemName": "Phone",
+    "price": 101,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VyQqnUx/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 105,
+    "itemName": "Phone",
+    "price": 1754,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/tpfq2L/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 106,
+    "itemName": "Headphones",
+    "price": 1822,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1652533577646080",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 107,
+    "itemName": "Desktop",
+    "price": 193,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1647151497084928",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 108,
+    "itemName": "Phone",
+    "price": 274,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3807755066408960",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 109,
+    "itemName": "Phone",
+    "price": 521,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/H4ZOrho/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 110,
+    "itemName": "Desktop",
+    "price": 1358,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2589122325643264",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 111,
+    "itemName": "Desktop",
+    "price": 388,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Xwrl6Q/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 112,
+    "itemName": "Laptop",
+    "price": 562,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=111768751833088",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 113,
+    "itemName": "Laptop",
+    "price": 1508,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4848165977063424",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 114,
+    "itemName": "Desktop",
+    "price": 460,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5475056851353600",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 115,
+    "itemName": "Laptop",
+    "price": 842,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8910631558184960",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 116,
+    "itemName": "Phone",
+    "price": 1494,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/QkbAn9/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 117,
+    "itemName": "Phone",
+    "price": 407,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/AGlCG/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 118,
+    "itemName": "Laptop",
+    "price": 1616,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7421338023100416",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 119,
+    "itemName": "Laptop",
+    "price": 1548,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/sFsjffJ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 120,
+    "itemName": "Phone",
+    "price": 1355,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4033688123736064",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 121,
+    "itemName": "Headphones",
+    "price": 1404,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4724162891350016",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 122,
+    "itemName": "Phone",
+    "price": 1493,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7095756995428352",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 123,
+    "itemName": "Headphones",
+    "price": 1146,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/kp42PpfR/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 124,
+    "itemName": "Phone",
+    "price": 299,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2559521624948736",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 125,
+    "itemName": "Headphones",
+    "price": 203,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/3hWoi4ZeW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 126,
+    "itemName": "Laptop",
+    "price": 675,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3340302423162880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 127,
+    "itemName": "Laptop",
+    "price": 500,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/vpXNhK/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 128,
+    "itemName": "Desktop",
+    "price": 496,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6005666095300608",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 129,
+    "itemName": "Phone",
+    "price": 1194,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/AE5Jo55l/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 130,
+    "itemName": "Desktop",
+    "price": 705,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3697885606576128",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 131,
+    "itemName": "Headphones",
+    "price": 1269,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/FZs5OIUTrr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 132,
+    "itemName": "Desktop",
+    "price": 450,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=870517678538752",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 133,
+    "itemName": "Headphones",
+    "price": 1760,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8386652598697984",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 134,
+    "itemName": "Phone",
+    "price": 870,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2820014748991488",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 135,
+    "itemName": "Headphones",
+    "price": 1619,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/OWLsIwiW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 136,
+    "itemName": "Desktop",
+    "price": 809,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/kSuhhfDdo/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 137,
+    "itemName": "Laptop",
+    "price": 1063,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/bQqjE3AVVz/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 138,
+    "itemName": "Phone",
+    "price": 1235,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/8OGAhNYu/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 139,
+    "itemName": "Desktop",
+    "price": 1732,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ptTuwN/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 140,
+    "itemName": "Headphones",
+    "price": 1621,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/L3eCk6/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 141,
+    "itemName": "Laptop",
+    "price": 1250,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8334944789069824",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 142,
+    "itemName": "Headphones",
+    "price": 515,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/8QjGv/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 143,
+    "itemName": "Laptop",
+    "price": 692,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ydzG3/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 144,
+    "itemName": "Phone",
+    "price": 1230,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8532589212073984",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 145,
+    "itemName": "Headphones",
+    "price": 1980,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8832520594391040",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 146,
+    "itemName": "Laptop",
+    "price": 1724,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5762394437451776",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 147,
+    "itemName": "Headphones",
+    "price": 1632,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8687644374466560",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 148,
+    "itemName": "Laptop",
+    "price": 377,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2962161643028480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 149,
+    "itemName": "Desktop",
+    "price": 399,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8263191150723072",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 150,
+    "itemName": "Desktop",
+    "price": 401,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/YXtkp1R797/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 151,
+    "itemName": "Phone",
+    "price": 959,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/igZ2Sgpbg/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 152,
+    "itemName": "Desktop",
+    "price": 1433,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VsEPO/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 153,
+    "itemName": "Desktop",
+    "price": 1072,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VOQpto/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 154,
+    "itemName": "Desktop",
+    "price": 529,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/AD0O7ff/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 155,
+    "itemName": "Phone",
+    "price": 998,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0Xd2pUA/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 156,
+    "itemName": "Laptop",
+    "price": 1071,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7802225048944640",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 157,
+    "itemName": "Phone",
+    "price": 1892,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/6Gx8RwhnR/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 158,
+    "itemName": "Laptop",
+    "price": 122,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/7Crue/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 159,
+    "itemName": "Laptop",
+    "price": 474,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2795964888776704",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 160,
+    "itemName": "Desktop",
+    "price": 1108,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/wT4tJ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 161,
+    "itemName": "Phone",
+    "price": 589,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/XlbZhDziMW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 162,
+    "itemName": "Laptop",
+    "price": 1897,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4484556853870592",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 163,
+    "itemName": "Headphones",
+    "price": 1213,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5989805164855296",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 164,
+    "itemName": "Phone",
+    "price": 1177,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/oHX2zNu/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 165,
+    "itemName": "Laptop",
+    "price": 1565,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/oA9lJ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 166,
+    "itemName": "Laptop",
+    "price": 926,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7573381360648192",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 167,
+    "itemName": "Desktop",
+    "price": 1682,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/r8ndM/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 168,
+    "itemName": "Headphones",
+    "price": 1102,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/syLweh/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 169,
+    "itemName": "Laptop",
+    "price": 535,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1328978845499392",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 170,
+    "itemName": "Phone",
+    "price": 519,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ColnW5u/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 171,
+    "itemName": "Phone",
+    "price": 1872,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2701082574716928",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 172,
+    "itemName": "Headphones",
+    "price": 1196,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Ya7kj/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 173,
+    "itemName": "Headphones",
+    "price": 460,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5085033538781184",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 174,
+    "itemName": "Laptop",
+    "price": 857,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8355280519692288",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 175,
+    "itemName": "Headphones",
+    "price": 448,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/yLbbBBoyue/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 176,
+    "itemName": "Desktop",
+    "price": 197,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/guT70k/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 177,
+    "itemName": "Laptop",
+    "price": 1740,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/JbbTQD/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 178,
+    "itemName": "Desktop",
+    "price": 385,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4184903761526784",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 179,
+    "itemName": "Headphones",
+    "price": 694,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4133918768889856",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 180,
+    "itemName": "Laptop",
+    "price": 1605,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/FTOiTTX3/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 181,
+    "itemName": "Desktop",
+    "price": 1785,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ZaRw4/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 182,
+    "itemName": "Laptop",
+    "price": 336,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/2ZNXGKMXRI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 183,
+    "itemName": "Laptop",
+    "price": 1065,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/IA5BFPHFny/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 184,
+    "itemName": "Phone",
+    "price": 1412,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/t43Sn/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 185,
+    "itemName": "Laptop",
+    "price": 1052,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/1olRXI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 186,
+    "itemName": "Laptop",
+    "price": 1650,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1675033764167680",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 187,
+    "itemName": "Headphones",
+    "price": 1582,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5710026612146176",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 188,
+    "itemName": "Phone",
+    "price": 1535,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6729185162690560",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 189,
+    "itemName": "Laptop",
+    "price": 921,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=553971626278912",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 190,
+    "itemName": "Headphones",
+    "price": 1662,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/YX9iS/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 191,
+    "itemName": "Desktop",
+    "price": 1241,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5847138470723584",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 192,
+    "itemName": "Laptop",
+    "price": 498,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/dxQQY7Mp1e/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 193,
+    "itemName": "Headphones",
+    "price": 807,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0TpWysk4/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 194,
+    "itemName": "Desktop",
+    "price": 1951,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/jXu8R5Qeq/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 195,
+    "itemName": "Phone",
+    "price": 504,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Be15Cvrw/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 196,
+    "itemName": "Desktop",
+    "price": 391,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7751174541279232",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 197,
+    "itemName": "Desktop",
+    "price": 1117,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8657624583110656",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 198,
+    "itemName": "Laptop",
+    "price": 1997,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/qZLhpcIb/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 199,
+    "itemName": "Laptop",
+    "price": 1353,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/gySUuZopPa/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 200,
+    "itemName": "Desktop",
+    "price": 1669,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3126689299169280",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 201,
+    "itemName": "Phone",
+    "price": 805,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/aaXgewL/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 202,
+    "itemName": "Desktop",
+    "price": 1899,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2889195957780480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 203,
+    "itemName": "Desktop",
+    "price": 536,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8402276884414464",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 204,
+    "itemName": "Phone",
+    "price": 502,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2711129732153344",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 205,
+    "itemName": "Desktop",
+    "price": 1715,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7445023975014400",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 206,
+    "itemName": "Desktop",
+    "price": 1914,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/GUo5dO/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 207,
+    "itemName": "Laptop",
+    "price": 1328,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1596897382891520",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 208,
+    "itemName": "Laptop",
+    "price": 1985,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8714576751230976",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 209,
+    "itemName": "Headphones",
+    "price": 864,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3925774860025856",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 210,
+    "itemName": "Laptop",
+    "price": 1128,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8730437977374720",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 211,
+    "itemName": "Phone",
+    "price": 964,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=860531441270784",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 212,
+    "itemName": "Headphones",
+    "price": 1639,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mWyqXq0/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 213,
+    "itemName": "Headphones",
+    "price": 1069,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1553342780145664",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 214,
+    "itemName": "Desktop",
+    "price": 1820,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6051922763055104",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 215,
+    "itemName": "Laptop",
+    "price": 1564,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/X31vp/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 216,
+    "itemName": "Laptop",
+    "price": 1663,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6707940117446656",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 217,
+    "itemName": "Desktop",
+    "price": 649,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/RmuXn/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 218,
+    "itemName": "Laptop",
+    "price": 400,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8156355179315200",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 219,
+    "itemName": "Desktop",
+    "price": 999,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4952364553338880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 220,
+    "itemName": "Laptop",
+    "price": 1328,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8845464357044224",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 221,
+    "itemName": "Desktop",
+    "price": 1565,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/8PTdCw7E/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 222,
+    "itemName": "Laptop",
+    "price": 986,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Zmsib/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 223,
+    "itemName": "Headphones",
+    "price": 1876,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/f5Glne/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 224,
+    "itemName": "Laptop",
+    "price": 433,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/8irEMe5ld/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 225,
+    "itemName": "Laptop",
+    "price": 635,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5617700457938944",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 226,
+    "itemName": "Phone",
+    "price": 1791,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/cbFAY/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 227,
+    "itemName": "Headphones",
+    "price": 627,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1049094715867136",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 228,
+    "itemName": "Phone",
+    "price": 740,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VLjHz/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 229,
+    "itemName": "Headphones",
+    "price": 153,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ebV4ObdMr1/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 230,
+    "itemName": "Phone",
+    "price": 529,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=190967667752960",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 231,
+    "itemName": "Phone",
+    "price": 1251,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/aCUSNz/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 232,
+    "itemName": "Phone",
+    "price": 931,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7424681818718208",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 233,
+    "itemName": "Laptop",
+    "price": 962,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8054794560208896",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 234,
+    "itemName": "Phone",
+    "price": 1361,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=733378120777728",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 235,
+    "itemName": "Phone",
+    "price": 1037,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Z9i82SI/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 236,
+    "itemName": "Headphones",
+    "price": 588,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/BfNGdDv/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 237,
+    "itemName": "Phone",
+    "price": 1261,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7040078897479680",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 238,
+    "itemName": "Headphones",
+    "price": 1872,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=907838234820608",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 239,
+    "itemName": "Laptop",
+    "price": 1492,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3096003221651456",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 240,
+    "itemName": "Phone",
+    "price": 399,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4359240795815936",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 241,
+    "itemName": "Headphones",
+    "price": 405,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2271992002641920",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 242,
+    "itemName": "Headphones",
+    "price": 435,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6865720367382528",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 243,
+    "itemName": "Laptop",
+    "price": 380,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5368703740805120",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 244,
+    "itemName": "Phone",
+    "price": 1412,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6006455673028608",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 245,
+    "itemName": "Laptop",
+    "price": 863,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/piNWyU/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 246,
+    "itemName": "Desktop",
+    "price": 979,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/jevGyC3Rw/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 247,
+    "itemName": "Laptop",
+    "price": 1171,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/z7nq5vfr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 248,
+    "itemName": "Desktop",
+    "price": 323,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/6oN10Q4e9/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 249,
+    "itemName": "Headphones",
+    "price": 438,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2026771239141376",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 250,
+    "itemName": "Headphones",
+    "price": 1420,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1965558859825152",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 251,
+    "itemName": "Phone",
+    "price": 1528,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lLVSW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 252,
+    "itemName": "Headphones",
+    "price": 1718,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ORdty/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 253,
+    "itemName": "Laptop",
+    "price": 488,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/LIpYJsoyk/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 254,
+    "itemName": "Laptop",
+    "price": 1605,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4751186274025472",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 255,
+    "itemName": "Laptop",
+    "price": 1744,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5115725523976192",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 256,
+    "itemName": "Desktop",
+    "price": 1376,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Q2XS3Ru88N/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 257,
+    "itemName": "Phone",
+    "price": 1259,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/EXXm3hnrw/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 258,
+    "itemName": "Phone",
+    "price": 1156,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5033186604089344",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 259,
+    "itemName": "Laptop",
+    "price": 1841,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/1Etohs/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 260,
+    "itemName": "Phone",
+    "price": 526,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/nVexqD8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 261,
+    "itemName": "Phone",
+    "price": 1773,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0zOs7/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 262,
+    "itemName": "Headphones",
+    "price": 1501,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mawTzwbm/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 263,
+    "itemName": "Desktop",
+    "price": 1508,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/BJ8YE/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 264,
+    "itemName": "Headphones",
+    "price": 425,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2814265146736640",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 265,
+    "itemName": "Phone",
+    "price": 1625,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4723822433402880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 266,
+    "itemName": "Desktop",
+    "price": 1743,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8138442659594240",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 267,
+    "itemName": "Phone",
+    "price": 1472,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/xTEhA8P8v/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 268,
+    "itemName": "Headphones",
+    "price": 611,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3132604511420416",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 269,
+    "itemName": "Headphones",
+    "price": 312,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5244272232103936",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 270,
+    "itemName": "Headphones",
+    "price": 1871,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4085075893288960",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 271,
+    "itemName": "Phone",
+    "price": 637,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lfCHwWOe/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 272,
+    "itemName": "Laptop",
+    "price": 306,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/cfZFIq/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 273,
+    "itemName": "Phone",
+    "price": 1297,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Eg3mkkBFIU/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 274,
+    "itemName": "Headphones",
+    "price": 907,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/WQJXqq/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 275,
+    "itemName": "Desktop",
+    "price": 1377,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5922010376962048",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 276,
+    "itemName": "Laptop",
+    "price": 1257,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=966767224553472",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 277,
+    "itemName": "Headphones",
+    "price": 328,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8230848153255936",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 278,
+    "itemName": "Headphones",
+    "price": 1410,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/tCesi/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 279,
+    "itemName": "Headphones",
+    "price": 1813,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8317589019164672",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 280,
+    "itemName": "Desktop",
+    "price": 376,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/HW7Wd/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 281,
+    "itemName": "Laptop",
+    "price": 284,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/C5c8Zg/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 282,
+    "itemName": "Laptop",
+    "price": 749,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=755834204192768",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 283,
+    "itemName": "Headphones",
+    "price": 1826,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=869401832194048",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 284,
+    "itemName": "Phone",
+    "price": 1352,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/V8Bnhg/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 285,
+    "itemName": "Laptop",
+    "price": 228,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2906130560843776",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 286,
+    "itemName": "Desktop",
+    "price": 442,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8575340618186752",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 287,
+    "itemName": "Phone",
+    "price": 821,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1686405365366784",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 288,
+    "itemName": "Desktop",
+    "price": 141,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/1BMyVVos/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 289,
+    "itemName": "Headphones",
+    "price": 581,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/PwFISrz/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 290,
+    "itemName": "Laptop",
+    "price": 1449,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/GBQPjZa/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 291,
+    "itemName": "Phone",
+    "price": 1838,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=832069716410368",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 292,
+    "itemName": "Phone",
+    "price": 1191,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7996888366186496",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 293,
+    "itemName": "Headphones",
+    "price": 1735,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mRYPx/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 294,
+    "itemName": "Desktop",
+    "price": 1828,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/aIApxppe/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 295,
+    "itemName": "Desktop",
+    "price": 1554,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4183027468992512",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 296,
+    "itemName": "Laptop",
+    "price": 290,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1572830095343616",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 297,
+    "itemName": "Desktop",
+    "price": 1220,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/44LOn/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 298,
+    "itemName": "Laptop",
+    "price": 748,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4170967817388032",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 299,
+    "itemName": "Phone",
+    "price": 1557,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Rta3B/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 300,
+    "itemName": "Phone",
+    "price": 1146,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4057223038763008",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 301,
+    "itemName": "Desktop",
+    "price": 1555,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/tdCJuB8CS/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 302,
+    "itemName": "Laptop",
+    "price": 1252,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3907764311031808",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 303,
+    "itemName": "Laptop",
+    "price": 1349,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8685118558306304",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 304,
+    "itemName": "Headphones",
+    "price": 1044,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VqdzyfyQ4F/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 305,
+    "itemName": "Headphones",
+    "price": 1058,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/C9FR6XX/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 306,
+    "itemName": "Laptop",
+    "price": 1996,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6897901745733632",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 307,
+    "itemName": "Laptop",
+    "price": 1060,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8529369102286848",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 308,
+    "itemName": "Laptop",
+    "price": 697,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2765716585447424",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 309,
+    "itemName": "Laptop",
+    "price": 850,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/leFffqX/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 310,
+    "itemName": "Headphones",
+    "price": 1085,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2991484596912128",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 311,
+    "itemName": "Phone",
+    "price": 1877,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=455291512553472",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 312,
+    "itemName": "Phone",
+    "price": 1822,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3017678985887744",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 313,
+    "itemName": "Phone",
+    "price": 430,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8637423718236160",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 314,
+    "itemName": "Phone",
+    "price": 1464,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2393538958458880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 315,
+    "itemName": "Desktop",
+    "price": 1218,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4735836046229504",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 316,
+    "itemName": "Phone",
+    "price": 823,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ym1cLkIF1P/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 317,
+    "itemName": "Phone",
+    "price": 351,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/E8uTMnO/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 318,
+    "itemName": "Phone",
+    "price": 1085,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7411493414895616",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 319,
+    "itemName": "Phone",
+    "price": 1115,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/TMgFuEj/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 320,
+    "itemName": "Phone",
+    "price": 436,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/hdyLGrxb3/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 321,
+    "itemName": "Desktop",
+    "price": 1981,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7976748635389952",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 322,
+    "itemName": "Desktop",
+    "price": 1087,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=998416899375104",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 323,
+    "itemName": "Laptop",
+    "price": 504,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5901106477531136",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 324,
+    "itemName": "Phone",
+    "price": 544,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lySdkCl/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 325,
+    "itemName": "Phone",
+    "price": 1615,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3937966237941760",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 326,
+    "itemName": "Phone",
+    "price": 435,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/XMyJ65u/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 327,
+    "itemName": "Phone",
+    "price": 1886,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/DtKvCyb3/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 328,
+    "itemName": "Headphones",
+    "price": 438,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/2KtZ971Z/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 329,
+    "itemName": "Phone",
+    "price": 1215,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2060906468999168",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 330,
+    "itemName": "Phone",
+    "price": 552,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1352190258053120",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 331,
+    "itemName": "Desktop",
+    "price": 1618,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/PnyqqBwi/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 332,
+    "itemName": "Phone",
+    "price": 1068,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/XPK5xEYT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 333,
+    "itemName": "Phone",
+    "price": 314,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/2DIahZ2/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 334,
+    "itemName": "Headphones",
+    "price": 1239,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8466193954373632",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 335,
+    "itemName": "Headphones",
+    "price": 759,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3052727816945664",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 336,
+    "itemName": "Desktop",
+    "price": 412,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Kd2DfoOvf/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 337,
+    "itemName": "Desktop",
+    "price": 1650,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/PTKpd/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 338,
+    "itemName": "Headphones",
+    "price": 1593,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7076987063500800",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 339,
+    "itemName": "Laptop",
+    "price": 951,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/6jofNCUCr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 340,
+    "itemName": "Desktop",
+    "price": 1980,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3934365920788480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 341,
+    "itemName": "Desktop",
+    "price": 142,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/SIbQg/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 342,
+    "itemName": "Laptop",
+    "price": 1749,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/raQByYTlbb/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 343,
+    "itemName": "Laptop",
+    "price": 1856,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/71ImAxq/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 344,
+    "itemName": "Laptop",
+    "price": 1836,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/SroVXhqhXB/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 345,
+    "itemName": "Desktop",
+    "price": 1012,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2472397449986048",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 346,
+    "itemName": "Headphones",
+    "price": 1240,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/hTsLFfX/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 347,
+    "itemName": "Desktop",
+    "price": 437,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/qF62oZtod/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 348,
+    "itemName": "Headphones",
+    "price": 1132,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2625502542036992",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 349,
+    "itemName": "Phone",
+    "price": 1703,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4597715893747712",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 350,
+    "itemName": "Headphones",
+    "price": 1809,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5561547367645184",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 351,
+    "itemName": "Headphones",
+    "price": 1819,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4507573929639936",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 352,
+    "itemName": "Laptop",
+    "price": 1290,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2814991153496064",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 353,
+    "itemName": "Phone",
+    "price": 1854,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3395437398589440",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 354,
+    "itemName": "Laptop",
+    "price": 1937,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4370449922260992",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 355,
+    "itemName": "Desktop",
+    "price": 1450,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/d3CDzH2p0u/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 356,
+    "itemName": "Phone",
+    "price": 1265,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/HsDt7zX4KH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 357,
+    "itemName": "Headphones",
+    "price": 1398,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/pCI6m1W/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 358,
+    "itemName": "Phone",
+    "price": 1775,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6082264351899648",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 359,
+    "itemName": "Desktop",
+    "price": 264,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2459002610909184",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 360,
+    "itemName": "Desktop",
+    "price": 666,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=681395582140416",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 361,
+    "itemName": "Headphones",
+    "price": 642,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1569418576396288",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 362,
+    "itemName": "Desktop",
+    "price": 568,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/IAHtrVaT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 363,
+    "itemName": "Laptop",
+    "price": 502,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8969646621327360",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 364,
+    "itemName": "Phone",
+    "price": 1387,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/FFkO0pV7/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 365,
+    "itemName": "Laptop",
+    "price": 393,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/nQUa4kBJ7t/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 366,
+    "itemName": "Desktop",
+    "price": 1974,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=429883681406976",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 367,
+    "itemName": "Desktop",
+    "price": 1872,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/SDQYyUi2P/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 368,
+    "itemName": "Desktop",
+    "price": 464,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/4uUShqj7/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 369,
+    "itemName": "Laptop",
+    "price": 213,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/APOlPODG9j/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 370,
+    "itemName": "Phone",
+    "price": 256,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1669716124893184",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 371,
+    "itemName": "Headphones",
+    "price": 1972,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5655700409679872",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 372,
+    "itemName": "Headphones",
+    "price": 735,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7780286825758720",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 373,
+    "itemName": "Laptop",
+    "price": 779,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/hZ7lBwo/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 374,
+    "itemName": "Laptop",
+    "price": 196,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/D3loP16/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 375,
+    "itemName": "Desktop",
+    "price": 1292,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7563260440084480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 376,
+    "itemName": "Laptop",
+    "price": 1494,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3096213570191360",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 377,
+    "itemName": "Headphones",
+    "price": 276,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4623233131216896",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 378,
+    "itemName": "Desktop",
+    "price": 1826,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5843547819343872",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 379,
+    "itemName": "Laptop",
+    "price": 1870,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/FkuPBr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 380,
+    "itemName": "Headphones",
+    "price": 1793,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/nBUUm/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 381,
+    "itemName": "Laptop",
+    "price": 1615,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8548138065330176",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 382,
+    "itemName": "Laptop",
+    "price": 1694,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4368295593508864",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 383,
+    "itemName": "Desktop",
+    "price": 1448,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/S02IRps/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 384,
+    "itemName": "Phone",
+    "price": 1659,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/WqFUYT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 385,
+    "itemName": "Phone",
+    "price": 340,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3061055599149056",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 386,
+    "itemName": "Desktop",
+    "price": 482,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/XiSLQ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 387,
+    "itemName": "Desktop",
+    "price": 1270,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7407045676367872",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 388,
+    "itemName": "Headphones",
+    "price": 1759,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=270135199793152",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 389,
+    "itemName": "Phone",
+    "price": 314,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1252324674633728",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 390,
+    "itemName": "Desktop",
+    "price": 1933,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5081740284526592",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 391,
+    "itemName": "Headphones",
+    "price": 455,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3172367033434112",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 392,
+    "itemName": "Laptop",
+    "price": 372,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/2yclS/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 393,
+    "itemName": "Desktop",
+    "price": 828,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6647086065909760",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 394,
+    "itemName": "Phone",
+    "price": 919,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/epvpYbO/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 395,
+    "itemName": "Laptop",
+    "price": 1008,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/FDNmx0cx/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 396,
+    "itemName": "Headphones",
+    "price": 582,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1454419531005952",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 397,
+    "itemName": "Phone",
+    "price": 1881,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5703191465295872",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 398,
+    "itemName": "Headphones",
+    "price": 645,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1064284018704384",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 399,
+    "itemName": "Laptop",
+    "price": 108,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/YfWD2ySUXn/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 400,
+    "itemName": "Phone",
+    "price": 173,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2229922244329472",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 401,
+    "itemName": "Headphones",
+    "price": 1234,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/e2A6A014/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 402,
+    "itemName": "Headphones",
+    "price": 1517,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/rdgmnrr/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 403,
+    "itemName": "Desktop",
+    "price": 518,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/DHy2Ng/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 404,
+    "itemName": "Laptop",
+    "price": 754,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/99FR0O/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 405,
+    "itemName": "Desktop",
+    "price": 256,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lOLR8KHmH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 406,
+    "itemName": "Headphones",
+    "price": 1255,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5058836152975360",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 407,
+    "itemName": "Phone",
+    "price": 1107,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/faW69jT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 408,
+    "itemName": "Phone",
+    "price": 358,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ZDTJBQH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 409,
+    "itemName": "Headphones",
+    "price": 1463,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/rwyj8t0/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 410,
+    "itemName": "Phone",
+    "price": 1815,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/gjsWejnm/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 411,
+    "itemName": "Phone",
+    "price": 568,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/QVHld/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 412,
+    "itemName": "Desktop",
+    "price": 1348,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/YaSRxnwG/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 413,
+    "itemName": "Headphones",
+    "price": 221,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8760125233823744",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 414,
+    "itemName": "Phone",
+    "price": 713,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/SSrY8C/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 415,
+    "itemName": "Phone",
+    "price": 1158,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5116695148494848",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 416,
+    "itemName": "Phone",
+    "price": 1364,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5388195042689024",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 417,
+    "itemName": "Desktop",
+    "price": 1367,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/6QyzIgP/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 418,
+    "itemName": "Headphones",
+    "price": 457,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/DmdLY/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 419,
+    "itemName": "Headphones",
+    "price": 1543,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mWZ2gVAV/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 420,
+    "itemName": "Phone",
+    "price": 433,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/VOvPqS7f/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 421,
+    "itemName": "Headphones",
+    "price": 1383,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4146932224098304",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 422,
+    "itemName": "Headphones",
+    "price": 907,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8002710108372992",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 423,
+    "itemName": "Desktop",
+    "price": 1561,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/On5A8g/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 424,
+    "itemName": "Headphones",
+    "price": 510,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6124755281248256",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 425,
+    "itemName": "Laptop",
+    "price": 1268,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/BBVuEjXR/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 426,
+    "itemName": "Headphones",
+    "price": 1058,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/UmjggdEY/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 427,
+    "itemName": "Headphones",
+    "price": 840,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/RkdueH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 428,
+    "itemName": "Phone",
+    "price": 984,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/8QuBv/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 429,
+    "itemName": "Phone",
+    "price": 809,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4487846110953472",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 430,
+    "itemName": "Desktop",
+    "price": 1656,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Vrai7R2/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 431,
+    "itemName": "Desktop",
+    "price": 252,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8132368353198080",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 432,
+    "itemName": "Headphones",
+    "price": 121,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ScC9mQa/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 433,
+    "itemName": "Desktop",
+    "price": 152,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/mvi8mG0/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 434,
+    "itemName": "Headphones",
+    "price": 1925,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/zKUWsUP/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 435,
+    "itemName": "Headphones",
+    "price": 1194,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/MDY768AxW8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 436,
+    "itemName": "Headphones",
+    "price": 1707,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2920265331769344",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 437,
+    "itemName": "Desktop",
+    "price": 1129,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/5Z7mm/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 438,
+    "itemName": "Headphones",
+    "price": 1879,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8292488877965312",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 439,
+    "itemName": "Desktop",
+    "price": 609,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5852237412696064",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 440,
+    "itemName": "Headphones",
+    "price": 761,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/GmbSYK/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 441,
+    "itemName": "Desktop",
+    "price": 1303,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7809517257490432",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 442,
+    "itemName": "Phone",
+    "price": 1649,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6050289939382272",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 443,
+    "itemName": "Desktop",
+    "price": 1191,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/eIX1X/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 444,
+    "itemName": "Desktop",
+    "price": 1639,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5700553006907392",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 445,
+    "itemName": "Laptop",
+    "price": 1610,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/GdjWKB1t8/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 446,
+    "itemName": "Headphones",
+    "price": 348,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2590373234868224",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 447,
+    "itemName": "Laptop",
+    "price": 336,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1459769267191808",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 448,
+    "itemName": "Laptop",
+    "price": 468,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/tMpz7vBFFd/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 449,
+    "itemName": "Phone",
+    "price": 1497,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Aeo4IuOH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 450,
+    "itemName": "Desktop",
+    "price": 1907,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/4Fj4yIXP/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 451,
+    "itemName": "Desktop",
+    "price": 1357,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/gVDlRVmZT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 452,
+    "itemName": "Desktop",
+    "price": 791,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2517495743250432",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 453,
+    "itemName": "Laptop",
+    "price": 336,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=5393958899286016",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 454,
+    "itemName": "Laptop",
+    "price": 371,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/0LkvI2/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 455,
+    "itemName": "Laptop",
+    "price": 1564,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2876030977048576",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 456,
+    "itemName": "Laptop",
+    "price": 821,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/lHGeOYxXW/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 457,
+    "itemName": "Desktop",
+    "price": 1039,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/eWyDkJYKqw/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 458,
+    "itemName": "Phone",
+    "price": 1095,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7182324928086016",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 459,
+    "itemName": "Headphones",
+    "price": 1847,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=236853810692096",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 460,
+    "itemName": "Laptop",
+    "price": 1559,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/MT5l55luqv/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 461,
+    "itemName": "Desktop",
+    "price": 904,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6745211799601152",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 462,
+    "itemName": "Phone",
+    "price": 1433,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2563766751330304",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 463,
+    "itemName": "Phone",
+    "price": 1397,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/bgUY8A/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 464,
+    "itemName": "Phone",
+    "price": 794,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2969912635031552",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 465,
+    "itemName": "Headphones",
+    "price": 1915,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/uIooYEjHT/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 466,
+    "itemName": "Headphones",
+    "price": 419,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3691243385126912",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 467,
+    "itemName": "Headphones",
+    "price": 425,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/umYkR/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 468,
+    "itemName": "Headphones",
+    "price": 1184,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ITxL58DpcH/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 469,
+    "itemName": "Desktop",
+    "price": 1024,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2373016491130880",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 470,
+    "itemName": "Laptop",
+    "price": 922,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/po2VZICs8O/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 471,
+    "itemName": "Desktop",
+    "price": 1194,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/4azWE/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 472,
+    "itemName": "Desktop",
+    "price": 960,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/Ep58yxH7dA/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 473,
+    "itemName": "Laptop",
+    "price": 446,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/TxxhQ77X/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 474,
+    "itemName": "Laptop",
+    "price": 1910,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8624793012142080",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 475,
+    "itemName": "Phone",
+    "price": 1943,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/AcJzufxb/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 476,
+    "itemName": "Desktop",
+    "price": 1164,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=7944144137748480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 477,
+    "itemName": "Laptop",
+    "price": 935,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6190388865925120",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 478,
+    "itemName": "Headphones",
+    "price": 1990,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4373479667269632",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 479,
+    "itemName": "Laptop",
+    "price": 975,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/c1drRgK2G2/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 480,
+    "itemName": "Headphones",
+    "price": 1972,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/gBKWO48W/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 481,
+    "itemName": "Desktop",
+    "price": 1738,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/TiHUHpEUm/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 482,
+    "itemName": "Desktop",
+    "price": 1742,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/oJouNw/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 483,
+    "itemName": "Desktop",
+    "price": 692,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/ZhPE9l4W/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 484,
+    "itemName": "Phone",
+    "price": 1186,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1355065679937536",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 485,
+    "itemName": "Laptop",
+    "price": 174,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/1WuUHOxM/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 486,
+    "itemName": "Laptop",
+    "price": 572,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/IiIUoNR1/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 487,
+    "itemName": "Headphones",
+    "price": 1483,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/qbcp01/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 488,
+    "itemName": "Laptop",
+    "price": 1269,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/iO9srZiQRU/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 489,
+    "itemName": "Laptop",
+    "price": 1978,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=2205157114773504",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 490,
+    "itemName": "Headphones",
+    "price": 1843,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=8734255442034688",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 491,
+    "itemName": "Desktop",
+    "price": 1940,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=6739643965898752",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 492,
+    "itemName": "Laptop",
+    "price": 1122,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/7kFj6F85/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 493,
+    "itemName": "Phone",
+    "price": 476,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/nqhFRj/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 494,
+    "itemName": "Phone",
+    "price": 715,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=3721166395015168",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 495,
+    "itemName": "Laptop",
+    "price": 1044,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/KG2Y6RvmZ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 496,
+    "itemName": "Phone",
+    "price": 153,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=1205852551774208",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 497,
+    "itemName": "Phone",
+    "price": 380,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/z1Vc350zPq/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 498,
+    "itemName": "Desktop",
+    "price": 1385,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://picsum.photos/seed/udrSoQ/640/480",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 499,
+    "itemName": "Desktop",
+    "price": 1888,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4270335427870720",
+    "category": "Electronics"
+  },
+  {
+    "itemId": 500,
+    "itemName": "Laptop",
+    "price": 1024,
+    "quantity": 10,
+    "selectedQuantity": null,
+    "pictureUrl": "https://loremflickr.com/640/480?lock=4567897980534784",
+    "category": "Electronics"
   }
 ]

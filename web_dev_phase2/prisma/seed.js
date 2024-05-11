@@ -20,6 +20,15 @@ async function main() {
         const itemSaleHistory = await fs.readJSON(itemSaleHistoryPath)
         const bankAccounts = await fs.readJSON(bankPath)
 
+        // Delete all existing entries in the database
+        // await prisma.user.deleteMany({})
+        // await prisma.item.deleteMany({})
+        // await prisma.cartItem.deleteMany({})
+        // await prisma.currentlySellingItem.deleteMany({})
+        // await prisma.itemSaleHistory.deleteMany({})
+        // await prisma.bankAccount.deleteMany({})
+
+        // populating the database
         for (const user of users) await prisma.user.create({ data: user })
         for (const item of items) await prisma.item.create({ data: item })
         for (const item of cartItems) await prisma.cartItem.create({ data: item })
