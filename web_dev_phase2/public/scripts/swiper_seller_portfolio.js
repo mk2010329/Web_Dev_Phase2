@@ -30,8 +30,8 @@ function currentItemCardTemplate(item) {
         </article>`;
 }
     
-function soldItemCardTemplate({name, selectedQuantity, category, picture,boughtByUser="Ali",price}) {
-        
+function soldItemCardTemplate({name, selectedQuantity, category, picture,boughtByUser,price}) {
+        boughtByUser="Ali"
         return `<article class="card">
                 <img src="${picture}" alt="Item"><br>
                 <p><b>Name: </b>${name}</p><br>
