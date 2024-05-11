@@ -22,7 +22,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-  
+  height: 80px;
 }
 
 header #centerDiv{
@@ -36,8 +36,7 @@ header #centerDiv{
 .ulbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-right:20px ; 
+    
 }
 
 .ulbar li{

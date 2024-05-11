@@ -5,9 +5,9 @@ import Link from 'next/link'
 export default function header() {
     return (
 
-    <header id="headbar" className={styles.headBar}>
+    <header id="headBar" className={styles.headBar}>
             <h1><a href="home_page.html">Qtech</a></h1>
-            <div id="centerDiv" className={styles.centerDiv}>
+            <div id="centerDiv" className={styles.headBar}>
                 <ul class="ulbar" className={styles.ulbar}>
                 <li><a href="/home_page.html">HOME</a></li>
                 <li><a href="/home_page.html#heading-id">CATEGORIES</a></li>
@@ -16,8 +16,8 @@ export default function header() {
                 </ul>
             </div>
 
-             <div>
-                    <ul id="rightHeader" class="ulbar" className={styles.ulbar}>
+             <div >
+                    <ul id="rightHeader" class="ulbar" className={styles.icons}>
                     <li>
                 <a href="/purchase/purchase.html"
                 ><img src="/images/icons/shopping-cart.svg" alt="shopping-cart icon"
