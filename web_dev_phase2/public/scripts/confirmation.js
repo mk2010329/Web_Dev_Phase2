@@ -52,6 +52,7 @@ async function orderNow(){
    localStorage.users = JSON.stringify(users)
    const retrievedData = localStorage.users;
    const parsedData = JSON.parse(retrievedData);
+   window.alert("Transaction successful")
    const url = 'http://localhost:3000/api/phase_1/users'
    const response = await fetch(url, {
                 method: 'POST',
@@ -61,7 +62,7 @@ async function orderNow(){
                 body: JSON.stringify(parsedData)
 
             })
-   window.alert("Transaction successful")
+
    window.location.href = "../seller_portfolio/index.html";
 
 }
